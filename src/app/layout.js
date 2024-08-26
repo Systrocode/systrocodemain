@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 
 export const metadata = {
-  title: "Systrocode",
+  title: "Systrocode- digital marketing, Web Design Company in India",
   description: "Welcome to Systrocode, your gateway to digital excellence. Specializing in web development, digital marketing, data analysis & Python automation, we empower businesses to thrive in the digital era. Our innovative solutions, tailored strategies & expert team set the foundation for your online success.",
   icons: {
     icon: ['/favicon.ico?v=4'],
