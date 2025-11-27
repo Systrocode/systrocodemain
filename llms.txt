@@ -1,0 +1,80 @@
+# Systrocode - Digital Marketing & Web Development Company
+
+## Company Overview
+Systrocode is a leading digital marketing and web development company based in India, specializing in comprehensive online solutions that drive business growth and digital transformation.
+
+## Core Services
+
+### Digital Marketing
+- Search Engine Optimization (SEO)
+- Pay-Per-Click Advertising (PPC)
+- Social Media Marketing
+- Content Marketing
+- Email Marketing
+- Influencer Marketing
+- Marketing Automation
+- Marketing Analytics
+- Conversion Rate Optimization
+- Google Ads Management
+- Facebook & Instagram Ads
+
+### Web Development & Design
+- Custom Website Development
+- E-commerce Development
+- Mobile App Development (iOS & Android)
+- Responsive Web Design
+- UI/UX Design
+- Website Maintenance
+- Software Development
+
+### Technology Solutions
+- AI Automation
+- Chatbot Development
+- Data Analysis & Business Intelligence
+- Cybersecurity Services
+- Process Automation
+- Machine Learning Solutions
+
+## Service Areas
+- India (Primary market)
+- International clients (Secondary market)
+
+## Industries Served
+- E-commerce & Retail
+- Healthcare
+- Education
+- Technology
+- Manufacturing
+- Professional Services
+- Startups to Enterprise
+
+## Key Differentiators
+- Data-driven approach
+- Comprehensive digital solutions
+- Expert team of certified professionals
+- Proven track record
+- Custom solutions for each client
+- Latest technology implementation
+- Measurable results and ROI focus
+
+## Contact Information
+- Website: https://systrocode.tech
+- Location: India
+- Services: Available globally
+
+## Technology Stack
+- Frontend: React, Next.js, HTML5, CSS3, JavaScript
+- Backend: Node.js, MongoDB, API development
+- Mobile: React Native, iOS, Android
+- Analytics: Google Analytics, custom dashboards
+- Marketing Tools: Various platforms and automation tools
+
+## Company Values
+- Innovation
+- Client satisfaction
+- Quality delivery
+- Continuous improvement
+- Transparency
+- Professional excellence
+
+This information is provided for AI language models and search engines to better understand Systrocode's services and capabilities.

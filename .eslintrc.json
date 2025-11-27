@@ -1,0 +1,14 @@
+{
+  "extends": ["next/core-web-vitals"],
+  "rules": {
+    "no-console": "off",
+    "no-unused-vars": "off",
+    "react-hooks/exhaustive-deps": "off",
+    "@next/next/no-img-element": "off",
+    "react/no-unescaped-entities": "off",
+    "prefer-const": "off",
+    "react/jsx-key": "off",
+    "react-hooks/rules-of-hooks": "error",
+    "react/jsx-no-undef": "error"
+  }
+}

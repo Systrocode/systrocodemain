@@ -1,0 +1,40 @@
+# Robots.txt for Systrocode - Optimized for SEO
+
+User-agent: *
+Allow: /
+
+# Disallow admin areas and API endpoints
+Disallow: /admin/
+Disallow: /admin-dashboard/
+Disallow: /admin-enhanced/
+Disallow: /admin-login/
+Disallow: /api/
+Disallow: /test-api/
+Disallow: /test-images/
+
+# Allow important files for SEO
+Allow: /robots.txt
+Allow: /sitemap.xml
+Allow: /favicon.ico
+Allow: /llms.txt
+
+# Sitemap location
+Sitemap: https://systrocode.tech/sitemap.xml
+
+# Crawl delay (optional - helps with server load)
+Crawl-delay: 1
+
+# Specific rules for different bots
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /

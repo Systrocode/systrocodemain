@@ -1,0 +1,11 @@
+<!-- Placeholder SVG for blog images -->
+<svg width="800" height="400" viewBox="0 0 800 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="800" height="400" fill="#3B82F6"/>
+<path d="M200 150H600V250H200V150Z" fill="#1E40AF"/>
+<path d="M350 180H450V190H350V180Z" fill="white"/>
+<path d="M300 200H500V210H300V200Z" fill="white"/>
+<path d="M320 220H480V230H320V220Z" fill="white"/>
+<circle cx="230" cy="180" r="15" fill="white"/>
+<text x="400" y="280" text-anchor="middle" fill="white" font-family="Arial" font-size="24" font-weight="bold">Next.js 15</text>
+<text x="400" y="310" text-anchor="middle" fill="#E5E7EB" font-family="Arial" font-size="16">Web Development</text>
+</svg>

@@ -1,0 +1,13 @@
+<!-- Placeholder SVG for AI Marketing blog -->
+<svg width="800" height="400" viewBox="0 0 800 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="800" height="400" fill="#7C3AED"/>
+<path d="M200 150H600V250H200V150Z" fill="#5B21B6"/>
+<circle cx="300" cy="180" r="8" fill="white"/>
+<circle cx="320" cy="180" r="8" fill="white"/>
+<circle cx="340" cy="180" r="8" fill="white"/>
+<path d="M350 170H550V190H350V170Z" fill="white"/>
+<path d="M350 200H500V220H350V200Z" fill="white"/>
+<path d="M400 230H450V240H400V230Z" fill="#A855F7"/>
+<text x="400" y="280" text-anchor="middle" fill="white" font-family="Arial" font-size="24" font-weight="bold">AI Marketing</text>
+<text x="400" y="310" text-anchor="middle" fill="#E5E7EB" font-family="Arial" font-size="16">Digital Marketing</text>
+</svg>
