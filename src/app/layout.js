@@ -1,6 +1,7 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Script from 'next/script'
+import WelcomePopup from '@/components/WelcomePopup';
 
 
 const inter = Inter({ subsets: ["latin"] });
@@ -16,6 +17,9 @@ export const metadata = {
   robots: "index, follow",
   verification: {
     google: "bce143db5e922614", // Google Search Console verification
+    other: {
+      'cf-2fa-verify': '8681bbe417b7934'
+    }
   },
   openGraph: {
     type: 'website',
@@ -62,20 +66,20 @@ export default function RootLayout({ children }) {
           title="Systrocode Blog RSS Feed"
           href="/blog/rss.xml"
         />
-        
+
         {/* Google tag (gtag.js) */}
-            <Script
-              src="https://www.googletagmanager.com/gtag/js?id=G-Q5NM5N122J"
-              strategy="afterInteractive"
-            />
-            <Script id="gtag-init" strategy="afterInteractive">
-              {`
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-Q5NM5N122J"
+          strategy="afterInteractive"
+        />
+        <Script id="gtag-init" strategy="afterInteractive">
+          {`
                 window.dataLayer = window.dataLayer || [];
                 function gtag(){dataLayer.push(arguments);}
                 gtag('js', new Date());
                 gtag('config', 'G-Q5NM5N122J');
               `}
-            </Script>
+        </Script>
         <Script
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9650313315366716"
           strategy="afterInteractive"
@@ -86,9 +90,9 @@ export default function RootLayout({ children }) {
       </head>
       <body className={`${inter.className} font-normal text-lg antialiased`} suppressHydrationWarning>
         {children}
-        
+
         {/* WhatsApp Widget */}
-        <Script 
+        <Script
           src="https://d3mkw6s8thqya7.cloudfront.net/integration-plugin.js"
           id="aisensy-wa-widget"
           strategy="afterInteractive"
@@ -108,11 +112,12 @@ export default function RootLayout({ children }) {
             })();
           `}
         </Script>
-        
-        <Script 
-          src="https://scripts.simpleanalyticscdn.com/latest.js" 
+
+        <Script
+          src="https://scripts.simpleanalyticscdn.com/latest.js"
           strategy="afterInteractive"
         />
+        <WelcomePopup />
       </body>
     </html>
   );
