@@ -1,5 +1,3 @@
-"use client";
-// import components
 import Header from '../components/Header.js';
 import Hero from '../components/Hero.js';
 import Overview from '../components/Overview.js';
@@ -15,6 +13,11 @@ import TechSolutions from '../components/TechSolutions.js';
 import { features, hero } from '@/data.js';
 import ClientNavbar from '@/components/ClientNavbar.js';
 import SEOContentBlock, { StructuredData, SEOTextContent } from '@/components/SEOContentBlock.js';
+
+export const metadata = {
+  title: "Systrocode | Leading Digital Marketing & Web Development Company in India",
+  description: "Systrocode is India's premier digital agency specializing in custom Next.js development, high-performance UI/UX design, AI-driven automation, and certified SEO services.",
+};
 
 export default function Home() {
   const seoContent = SEOTextContent.home;

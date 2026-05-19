@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useEffect } from 'react';
 import { overview } from '@/data';
 import Image from 'next/image';

@@ -1,3 +1,5 @@
+"use client";
+
 import React from 'react'
 import { FiPhone, FiMail, FiMapPin } from 'react-icons/fi';
 import { FaFacebook, FaLinkedin, FaTwitter, FaInstagram } from 'react-icons/fa';

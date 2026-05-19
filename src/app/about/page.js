@@ -1,7 +1,4 @@
-"use client";
-// import components
 import Header from '@/components/Header.js';
-// import Header from '../components/Header.js';
 import Hero from '@/components/Hero.js';
 import Overview from '@/components/Overview.js';
 import Brands from '@/components/Brands.js';
@@ -14,6 +11,11 @@ import Footer from '@/components/Footer.js';
 import { features, hero } from '@/data';
 import { NavbarMT } from '@/components/NavbarMT';
 import SEOContentBlock, { StructuredData, SEOTextContent } from '@/components/SEOContentBlock.js';
+
+export const metadata = {
+  title: "About Us | Systrocode - Digital Marketing & UI/UX Design Experts",
+  description: "Discover the Systrocode story. Meet our certified digital marketing experts, web developers, and designers driving online success for global brands.",
+};
 // import Card2 from '@/components/Card2.js';
 
 export default function Home() {

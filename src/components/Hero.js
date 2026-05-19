@@ -1,3 +1,5 @@
+"use client";
+
 import { HiOutlineChevronDown } from 'react-icons/hi';
 import Image from 'next/image';
 import Link from 'next/link';
