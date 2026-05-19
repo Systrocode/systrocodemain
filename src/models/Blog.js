@@ -82,7 +82,6 @@ const BlogSchema = new mongoose.Schema({
 });
 
 // Create indexes for better query performance
-BlogSchema.index({ slug: 1 });
 BlogSchema.index({ status: 1 });
 BlogSchema.index({ category: 1 });
 BlogSchema.index({ publishedAt: -1 });

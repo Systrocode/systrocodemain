@@ -275,7 +275,6 @@ const projectSchema = new mongoose.Schema({
   timestamps: true
 });
 
-projectSchema.index({ slug: 1 });
 projectSchema.index({ category: 1 });
 projectSchema.index({ featured: 1 });
 projectSchema.index({ published: 1 });
@@ -321,7 +320,6 @@ const newsletterSchema = new mongoose.Schema({
   timestamps: true
 });
 
-newsletterSchema.index({ email: 1 });
 newsletterSchema.index({ status: 1 });
 
 // Analytics Model (for tracking website metrics)
