@@ -68,7 +68,7 @@ const OurClients = () => {
             {clients.map((client, index) => (
               <div
                 key={index}
-                className="mx-8 lg:mx-12 flex items-center justify-center p-8 bg-white rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 transform hover:scale-105 border border-gray-100 w-[200px] h-[140px]"
+                className="mx-4 lg:mx-12 flex items-center justify-center p-4 lg:p-8 bg-white rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 transform hover:scale-105 border border-gray-100 w-[140px] h-[100px] lg:w-[200px] lg:h-[140px]"
               >
                 {client.logo ? (
                   <Image
@@ -80,8 +80,8 @@ const OurClients = () => {
                   />
                 ) : (
                   <div className="text-center">
-                    <div className="text-2xl font-bold text-gray-700 mb-1">{client.name}</div>
-                    <div className="text-xs text-gray-400">Client Logo</div>
+                    <div className="text-xl lg:text-2xl font-bold text-gray-700 mb-1">{client.name}</div>
+                    <div className="text-[10px] lg:text-xs text-gray-400">Client Logo</div>
                   </div>
                 )}
               </div>
@@ -90,7 +90,7 @@ const OurClients = () => {
         </div>
 
         {/* Stats Section */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-8 w-full max-w-4xl">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-20 w-full max-w-4xl">
           <div className="text-center transform hover:scale-105 transition-transform duration-300">
             <div className="text-4xl lg:text-5xl font-bold text-accent mb-2">250+</div>
             <div className="text-gray-600 text-sm lg:text-base">Happy Clients</div>

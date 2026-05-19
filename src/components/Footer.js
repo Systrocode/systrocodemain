@@ -8,74 +8,67 @@ import { animateFooter } from '@/utils/animations';
 
 
 const Footer = () => {
-  const { logo, links, categories, newsletter, form } = footer;
-  const { link1, link2, copyText, social } = copyright;
+  const { about, services, portfolio, otherResources } = footer;
+  const { social } = copyright;
 
   useEffect(() => {
     animateFooter();
   }, []);
 
-  return( 
-    <footer className='pt-[142px] pb-[60px] footer-section'>
+  return (
+    <footer className='pt-[80px] pb-[60px] footer-section'>
       <div className="container mx-auto">
-  <div className='flex flex-col items-center text-center lg:flex-row lg:items-start lg:text-left lg:justify-between gap-y-8'>
+        <div className='flex flex-col lg:flex-row justify-between gap-x-5 gap-y-10'>
+          {/* About */}
           <div className="footer-item">
-            {logo && <Image src={logo} width='100' height='100' alt="Systrocode company logo"/>}
-            {/* <h1 className='text-sm font-semibold'>Empowering</h1> */}
-          </div>
-          {/* List 1 */}
-          <div className="footer-item">
-            <div className='text-2xl uppercase font-medium mb-6'>Links</div>
+            <div className='text-xl font-bold mb-4 text-black'>About</div>
             <ul className='flex flex-col gap-y-3'>
-              {
-                links.map((link,index)=>{
-                  const { href, name } = link;
-                  return( 
-                    <li key={index}>
-                      <Link className='font-medium hover:text-accent transition' href={href}>{name}</Link>
-                    </li>
-                  )
-                })
-              }
+              {about.map((item, index) => (
+                <li key={index}>
+                  <Link className='text-gray-600 hover:text-accent transition text-sm' href={item.href}>{item.name}</Link>
+                </li>
+              ))}
             </ul>
           </div>
-          {/* List 2 */}
+
+          {/* Services */}
           <div className="footer-item">
-            <div className='text-2xl uppercase font-medium mb-6'>Categories</div>
+            <div className='text-xl font-bold mb-4 text-black'>Services</div>
             <ul className='flex flex-col gap-y-3'>
-              {
-                categories.map((link,index)=>{
-                  const { href, name } = link;
-                  return( 
-                    <li key={index}>
-                      <Link className='font-medium hover:text-accent transition' href={href}>{name}</Link>
-                    </li>
-                  )
-                })
-              }
+              {services.map((item, index) => (
+                <li key={index}>
+                  <Link className='text-gray-600 hover:text-accent transition text-sm' href={item.href}>{item.name}</Link>
+                </li>
+              ))}
             </ul>
           </div>
-          {/* Socials */}
+
+          {/* Portfolio */}
           <div className="footer-item">
-            <div className='text-2xl uppercase font-medium mb-6'>Socials</div>
-            <ul className='flex gap-x-2 justify-center'>
-              {
-                social.map((item,index)=>{
-                  const { href, icon } = item;
-                  return (
-                    <li key={index}>
-                      <Link href={href}>
-                        {icon && <Image src={icon} width='35' height='35' alt="Social media icon"/>}
-                      </Link>
-                    </li>
-                  )
-                })
-              }
-            </ul>  
+            <div className='text-xl font-bold mb-4 text-black'>Portfolio</div>
+            <ul className='flex flex-col gap-y-3'>
+              {portfolio.map((item, index) => (
+                <li key={index}>
+                  <Link className='text-gray-600 hover:text-accent transition text-sm' href={item.href}>{item.name}</Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Other Resources */}
+          <div className="footer-item">
+            <div className='text-xl font-bold mb-4 text-black'>Other Resources</div>
+            <ul className='flex flex-col gap-y-3'>
+              {otherResources.map((item, index) => (
+                <li key={index}>
+                  <Link className='text-gray-600 hover:text-accent transition text-sm' href={item.href}>{item.name}</Link>
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
-        <hr className='mt-10 mb-5 border-1 border-black footer-divider'/>
-        <Copyright/>
+        <hr className='mt-10 mb-5 border-1 border-black footer-divider' />
+        <Copyright />
       </div>
     </footer>
   );

@@ -1,26 +1,27 @@
 import React from 'react';
+import Link from 'next/link';
 
 const TechSolutions = () => {
     const services = [
         {
             title: "AI Development",
             description: "We optimize processes, decision-making, efficiency, and business growth through intelligent AI solutions that we create.",
-            link: "#"
+            link: "/contact"
         },
         {
             title: "Generative AI",
             description: "Generative AI models that seamlessly enhance user engagement through the creation of content, automation of workflows, and boosting productivity.",
-            link: "#"
+            link: "/contact"
         },
         {
             title: "Blockchain Development",
             description: "Offer blockchain development solutions, such as DApps and smart contracts, that run on existing blockchain platforms.",
-            link: "#"
+            link: "/contact"
         },
         {
             title: "Chatbot Development",
             description: "We build intelligent chatbots that provide instant support and enhance customer interaction 24/7.",
-            link: "#"
+            link: "/contact"
         }
     ];
 
@@ -46,9 +47,11 @@ const TechSolutions = () => {
                                 </div>
                                 <h3 className="text-2xl font-bold mb-2 text-white">Fuel your digital-first idea</h3>
                                 <p className="text-gray-400 mb-6">With 1600+ transformation experts</p>
-                                <button className="bg-[#d93a74] text-white px-8 py-3 rounded-full font-medium hover:bg-[#b02e5d] transition-colors">
-                                    Innovate with us
-                                </button>
+                                <Link href="/contact">
+                                    <button className="bg-[#d93a74] text-white px-8 py-3 rounded-full font-medium hover:bg-[#b02e5d] transition-colors">
+                                        Innovate with us
+                                    </button>
+                                </Link>
                             </div>
                         </div>
                     </div>
@@ -56,15 +59,17 @@ const TechSolutions = () => {
                     {/* Right Column - Services List */}
                     <div className="flex flex-col gap-6">
                         {services.map((service, index) => (
-                            <div key={index} className="group bg-[#111] p-8 rounded-2xl border border-gray-800 hover:border-gray-600 transition-all duration-300 flex items-center justify-between cursor-pointer">
-                                <div className="max-w-md">
-                                    <h3 className="text-2xl font-bold mb-3 text-white">{service.title}</h3>
-                                    <p className="text-gray-400 leading-relaxed">{service.description}</p>
+                            <Link href={service.link} key={index}>
+                                <div className="group bg-[#111] p-8 rounded-2xl border border-gray-800 hover:border-gray-600 transition-all duration-300 flex items-center justify-between cursor-pointer">
+                                    <div className="max-w-md">
+                                        <h3 className="text-2xl font-bold mb-3 text-white">{service.title}</h3>
+                                        <p className="text-gray-400 leading-relaxed">{service.description}</p>
+                                    </div>
+                                    <div className="w-12 h-12 rounded-full border border-gray-700 flex items-center justify-center group-hover:bg-white group-hover:text-black transition-all duration-300 shrink-0 ml-4">
+                                        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
+                                    </div>
                                 </div>
-                                <div className="w-12 h-12 rounded-full border border-gray-700 flex items-center justify-center group-hover:bg-white group-hover:text-black transition-all duration-300 shrink-0 ml-4">
-                                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
-                                </div>
-                            </div>
+                            </Link>
                         ))}
                     </div>
                 </div>

@@ -14,26 +14,47 @@ const mongodb = '/assets/img/overview/brands/mongodb.svg';
 const zoho = '/assets/img/overview/brands/zoho.svg';
 import Marquee from "react-fast-marquee";
 
-const Brands = () => (
-  <section className='container mx-auto px-4 lg:px-8'>
-    <div className="flex flex-col py-16 lg:py-20 items-center justify-between space-y-12">
-      <h2 className='title text-center mx-auto'>Our Technology Partners</h2>
-      <Marquee>
-        <Image src={microsoft} alt="Microsoft" width={64} height={64} className="mx-6" />
-        <Image src={shopify} alt="Shopify" width={64} height={64} className="mx-6" />
-        <Image src={nextjs} alt="Next.js" width={64} height={64} className="mx-6" />
-        <Image src={python} alt="Python" width={64} height={64} className="mx-6" />
-        <Image src={powerbi} alt="Power BI" width={64} height={64} className="mx-6" />
-        <Image src={figma} alt="Figma" width={64} height={64} className="mx-6" />
-        <Image src={wordpress} alt="WordPress" width={64} height={64} className="mx-6" />
-        <Image src={tableau} alt="Tableau" width={64} height={64} className="mx-6" />
-        <Image src={tailwind} alt="Tailwind CSS" width={64} height={64} className="mx-6" />
-        <Image src={webflow} alt="Webflow" width={64} height={64} className="mx-6" />
-        <Image src={mongodb} alt="MongoDB" width={64} height={64} className="mx-6" />
-        <Image src={zoho} alt="Zoho" width={64} height={64} className="mx-6" />
-      </Marquee>
-    </div>
-  </section>
-);
+const Brands = () => {
+  const brands = [
+    { name: "Microsoft", logo: microsoft },
+    { name: "Shopify", logo: shopify },
+    { name: "Next.js", logo: nextjs },
+    { name: "Python", logo: python },
+    { name: "Power BI", logo: powerbi },
+    { name: "Figma", logo: figma },
+    { name: "WordPress", logo: wordpress },
+    { name: "Tableau", logo: tableau },
+    { name: "Tailwind CSS", logo: tailwind },
+    { name: "Webflow", logo: webflow },
+    { name: "MongoDB", logo: mongodb },
+    { name: "Zoho", logo: zoho },
+  ];
+
+  return (
+    <section className='container mx-auto px-4 lg:px-8'>
+      <div className="flex flex-col py-16 lg:py-20 items-center justify-between space-y-12">
+        <h2 className='title text-center mx-auto'>Our Technology Partners</h2>
+        <div className="w-full">
+          <Marquee gradient={true} gradientColor="white" speed={50} pauseOnHover={true}>
+            {brands.map((brand, index) => (
+              <div
+                key={index}
+                className="mx-4 lg:mx-12 flex items-center justify-center p-4 lg:p-8 bg-white rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 transform hover:scale-105 border border-gray-100 w-[140px] h-[100px] lg:w-[200px] lg:h-[140px]"
+              >
+                <Image
+                  src={brand.logo}
+                  alt={brand.name}
+                  width={100}
+                  height={60}
+                  className="object-contain filter grayscale hover:grayscale-0 transition-all duration-300 opacity-70 hover:opacity-100"
+                />
+              </div>
+            ))}
+          </Marquee>
+        </div>
+      </div>
+    </section>
+  );
+};
 
 export default Brands;

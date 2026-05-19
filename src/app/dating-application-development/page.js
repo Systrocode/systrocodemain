@@ -30,7 +30,7 @@ export default function DatingAppDevelopment() {
                         viewport={{ once: false, amount: 0.3 }}
                         className="text-center mb-16"
                     >
-                        <h2 className="text-4xl font-bold mb-4 text-dark">Our Dating App Development Services</h2>
+                        <h2 className="text-4xl font-bold mb-4 text-dark">Our Dating App Development Company Services</h2>
                         <p className="text-xl text-gray-600 max-w-3xl mx-auto">
                             Create engaging platforms that foster meaningful connections with our expert solutions
                         </p>

@@ -101,7 +101,7 @@ export const hero = {
     image: Webd2,
   },
   datingAppDevelopment: {
-    title: 'Dating App Development',
+    title: 'Dating App Development Company',
     subtitle: "Welcome to SYSTROCODE, your premier dating app development partner. We specialize in creating engaging, secure, and scalable dating applications that connect people. From matching algorithms to real-time chat, we build platforms that foster meaningful connections.",
     btnText: 'Get A Free Quote',
     side: '— SystroCode',
@@ -502,32 +502,40 @@ export const cta = {
 };
 
 export const footer = {
-  logo: LogoImg,
-  links: [
-    { name: 'Home', href: '/' },
-    { name: 'About us', href: '/about' },
-    { name: 'Services', href: '/services' },
-    { name: 'Blog', href: '/blog' },
-    { name: 'Contact Us', href: '/contact' },
-    // { name: 'Features', href: '/' },
+  about: [
+    { name: 'About Us', href: '/about' },
+    { name: 'Our Process', href: '/process' },
+    { name: 'Partner with us', href: '/partner' },
+    { name: 'Write for us', href: '/write-for-us' },
+    { name: 'Life at Systrocode', href: '/life-at-systrocode' },
   ],
-  categories: [
+  services: [
+    { name: 'Digital Transformation Services', href: '/services/digital-transformation' },
+    { name: 'AI Development', href: '/services/ai-development' },
+    { name: 'Generative AI Development', href: '/services/generative-ai' },
     { name: 'Web Development', href: '/web-development' },
-    { name: 'UI/UX Design & Wireframing', href: '/web-design' },
-    { name: 'Digital Marketing (SEO)', href: '/seo' },
-    { name: 'Data Analysis', href: '/data-analysis' },
-    { name: 'AI Automation', href: '/ai-automation' },
-    { name: 'Cyber Security', href: '/cyber-security' },
+    { name: 'Mobile App Development', href: '/mobile-development' },
+    { name: 'Custom Software Development', href: '/software-development' },
+    { name: 'Ecommerce Development', href: '/ecommerce-development' },
+    { name: 'Hire Developers', href: '/hire-developers' },
+    { name: 'MVP Development', href: '/mvp-development' },
+    { name: 'Offshore Software Development', href: '/offshore-development' },
   ],
-  newsletter: {
-    title: 'Newsletter',
-    subtitle: 'Over 25000 people have subscribed',
-  },
-  form: {
-    placeholder: 'Enter your email',
-    btnText: 'Subscribe',
-    smallText: "We don't sell your email and spam",
-  },
+  portfolio: [
+    { name: 'FinTech Dashboard', href: '/portfolio/fintech-dashboard' },
+    { name: 'HealthCare Connect', href: '/portfolio/healthcare-connect' },
+    { name: 'E-Commerce Pro', href: '/portfolio/ecommerce-pro' },
+    { name: 'Real Estate Hub', href: '/portfolio/real-estate-hub' },
+    { name: 'Social Media Analytics', href: '/portfolio/social-media-analytics' },
+    { name: 'Travel Companion App', href: '/portfolio/travel-companion' },
+    { name: 'Smart Home Controller', href: '/portfolio/smart-home' },
+    { name: 'Learning Management System', href: '/portfolio/lms' },
+  ],
+  otherResources: [
+    { name: 'Blog', href: '/blog' },
+    { name: 'Careers', href: '/careers' },
+    { name: 'Contact Us', href: '/contact' },
+  ],
 };
 
 // Blog Posts Data
@@ -538,45 +546,68 @@ export const blogPosts = [
     slug: "future-web-development-nextjs-15",
     excerpt: "Explore the latest features in Next.js 15 and how they're revolutionizing modern web development. From improved performance to enhanced developer experience.",
     content: `
-      <p>In today's Fastly growing tech industry, staying updated in web development means supporting the latest frameworks and improving for top performance, flexibility, and user experience. As we look in 2025 and farther, Next.js 15 positions itself at the root of the next generation of modern web and business solutions.</p>
+
+      <p>In the rapidly evolving landscape of web development, Next.js 15 has emerged as a game-changer. Released with a focus on stability and speed, it introduces architectural shifts that redefine how we build React applications. At Systrocode, we've already started migrating our core projects to Next.js 15, and the performance gains are undeniable.</p>
       
-      <h2>Why Next.js 15 is Changing Web Development</h2>
+      <h2>1. Turbopack: The Engine of Speed</h2>
+      <p>The most immediate improvement developers will notice is <strong>Turbopack</strong>. It's an incremental bundler written in Rust, designed to replace Webpack. In our tests, it speeds up local server startup by up to <strong>700%</strong>.</p>
       
-      <h3>1. Turbopack: Supercharged Build Speeds</h3>
-      <p>The introduction of webpack—a trending fast bundler that's up to 700x faster than traditional Webpack—has become a trending topic among React and JavaScript communities. This feature allows teams to ship production-ready apps faster, improving developer experience and ROI for tech startups and digital agencies.</p>
+      <p>To use it, simply update your <code>dev</code> script in <code>package.json</code>:</p>
       
-      <h3>2. Better App Router & Natural Routing</h3>
-      <p>With an improved App Router, navigation and routing in complex single-page applications (SPAs) is more natural and stronger. Developers benefit from specific control over routing, dynamic segments, and streamlined API endpoints, which are important for future-proofing large-scale SaaS projects.</p>
+      <pre><code class="language-json">
+"scripts": {
+  "dev": "next dev --turbo",
+  "build": "next build",
+  "start": "next start"
+}
+      </code></pre>
       
-      <h3>3. Advanced Image Optimization</h3>
-      <p>In 2025, Optimized Images are a must for core web essentials and SEO rankings. Next.js 15 introduces native support for modern formats like WebP and AVIF, making websites load superfast and user-friendly across devices.</p>
+      <h2>2. Async Request APIs (Breaking Change)</h2>
+      <p>One of the most significant changes in Next.js 15 is the shift to <strong>Async Request APIs</strong>. APIs that rely on runtime information—like <code>headers</code>, <code>cookies</code>, and <code>params</code>—are now asynchronous.</p>
       
-      <h3>4. Server Components and Edge Rendering</h3>
-      <p>Next.js 15 brings Server Components to the lead, enabling unique speed with hybrid static & dynamic rendering. The Edge Runtime makes websites globally accessible and ultra-low latency, using the best of both static generation and server-side rendering (SSR).</p>
+      <p>Previously, you might have accessed params directly. Now, you should await them:</p>
       
-      <h2>Performance & Developer Experience</h2>
-      <p>The results speak quantity: shifting to Next.js 15 reduces build times, cuts average load speeds by 40%, and reduce bundle sizes. merged TypeScript, hot reloading, and modern debugging tools give developers a smoother, more productive process—great for team collaboration and large quick projects.</p>
+      <pre><code class="language-javascript">
+// Before (Next.js 14)
+export default function Page({ params }) {
+  return &lt;div&gt;ID: {params.id}&lt;/div&gt;;
+}
+
+// After (Next.js 15)
+export default async function Page({ params }) {
+  const { id } = await params;
+  return &lt;div&gt;ID: {id}&lt;/div&gt;;
+}
+      </code></pre>
       
-      <h2>Shifting Guide: Go from Next.js 14 to 15</h2>
-      <p>Upgrading is direct for most React projects. Follow best practices:</p>
-      <ul>
-        <li>Check for dismissed APIs</li>
-        <li>Test core app flows</li>
-        <li>Leverage automated migration scripts</li>
-        <li>Optimize images and routes</li>
-      </ul>
-      <p>For smooth upgrades, engage with community forums or ask for professional help for mission-crucial SaaS platforms.</p>
+      <p>This change allows Next.js to optimize rendering by not blocking the main thread for data that isn't immediately available.</p>
+
+      <h2>3. Enhanced Image Optimization</h2>
+      <p>The <code>next/image</code> component has been optimized further. It now simplifies usage and improves Layout Shift scores automatically.</p>
       
-      <h2>Future Web Development Trends: What to Watch</h2>
-      <ul>
-        <li><strong>AI-powered customisation:</strong> AI-focused content and recommendation engines increase engagement.</li>
-        <li><strong>Headless CMS Integration:</strong> Next.js 15 shines with headless CMSs, enabling scale and multi-channel delivery.</li>
-        <li><strong>Cloud-native Deployments:</strong> Integration with Vercel, AWS, and edge networks for scalability and security.</li>
-        <li><strong>Mobile-First & Responsive Design:</strong> Remain a root strategy for taking next-gen digital users.</li>
-      </ul>
+      <pre><code class="language-javascript">
+import Image from 'next/image';
+
+export default function Hero() {
+  return (
+    &lt;Image
+      src="/hero.png"
+      alt="Dashboard"
+      width={500}
+      height={300}
+      priority // Preload critical images
+    /&gt;
+  );
+}
+      </code></pre>
+      
+      <h2>4. Server Actions: The New Standard</h2>
+      <p>Server Actions are now stable and arguably the best way to handle form submissions and data mutations. They allow you to call server-side functions directly from your client components, eliminating the need for separate API routes for simple tasks.</p>
       
       <h2>Conclusion</h2>
-      <p>Next.js 15 is setting new rules for fast, flexible, and SEO-friendly web development. Either you're a digital marketing agency or SaaS founder, this is the right time to research what this powerful framework can do for your digital future. Stay updated by using the latest tech and working with future-focused web development teams.</p>
+      <p>Next.js 15 isn't just an update; it's a refinement of the React server-side story. For businesses, this means faster TTI (Time to Interactive) and better SEO. For developers, it means a smoother, faster workflow.</p>
+      
+      <p>Ready to upgrade? Check out the <a href="https://nextjs.org/blog/next-15" target="_blank" rel="noopener noreferrer">official documentation</a> or contact our team for a seamless migration strategy.</p>
     `,
     image: "/assets/img/blog/nextjs-15.jpg",
     posterConfig: {
@@ -1200,11 +1231,206 @@ export const copyright = {
     name: 'Contact us',
     href: '/',
   },
-  copyText: 'Copyright © 2025 SYSTROCODE. All Rights Reserved.',
+  copyText: 'Copyright © 2025 Systrocode. All rights reserved. Privacy Policy | FAQ | Sitemap',
   social: [
     { icon: FacebookIcon, href: 'https://facebook.com/people/Systrocode/61553616951262' },
     { icon: TwitterIcon, href: 'https://x.com/systrocode' },
     { icon: LinkedinIcon, href: 'https://www.linkedin.com/company/systrocode/' },
     { icon: InstagramIcon, href: 'https://www.instagram.com/systrocode/' },
   ],
+};
+
+export const portfolioData = {
+  'fintech-dashboard': {
+    title: 'FinTech Dashboard',
+    category: 'Web Application',
+    bannerImage: '/assets/img/portfolio/fintech-banner.jpg', // Placeholder
+    overview: {
+      clientBackground: 'A leading financial services provider based in New York, looking to modernize their legacy systems for better performance and user experience.',
+      objective: 'To build a real-time, high-frequency trading dashboard that allows users to track portfolios, analyze market trends, and execute trades with milliseconds latency.',
+      solution: 'We developed a high-performance web application using Next.js and WebSocket for real-time data streaming. We integrated D3.js for complex financial charting and ensured bank-grade security compliance.'
+    },
+    stats: {
+      timeline: '12 Weeks',
+      screens: '45+',
+      teamSize: '8 Experts'
+    },
+    features: [
+      { title: 'Real-time Analytics', description: 'Live streaming of stock prices and market data with sub-second latency updates.' },
+      { title: 'Portfolio Management', description: 'Comprehensive tools for tracking asset allocation, performance metrics, and P&L analysis.' },
+      { title: 'Automated Reporting', description: 'Generate detailed PDF and Excel reports for tax and compliance purposes with a single click.' },
+      { title: 'Bank-Grade Security', description: 'Implemented OAuth2.0, 2FA, and end-to-end encryption to safeguard sensitive financial data.' }
+    ],
+    techStack: ['Next.js', 'Node.js', 'PostgreSQL', 'D3.js', 'WebSockets', 'Redis'],
+    result: 'The new dashboard reduced data latency by 90% and increased user engagement by 40% within the first three months of launch.',
+    image: '/assets/img/portfolio/fintech.jpg'
+  },
+  'healthcare-connect': {
+    title: 'HealthCare Connect',
+    category: 'Mobile App',
+    bannerImage: '/assets/img/portfolio/healthcare-banner.jpg',
+    overview: {
+      clientBackground: 'A healthcare startup aiming to bridge the gap between patients and doctors in remote areas.',
+      objective: 'To create a telemedicine platform that enables secure video consultations, digital prescriptions, and easy appointment management.',
+      solution: 'We built a cross-platform mobile app using React Native, integrating WebRTC for high-quality video calls and a secure backend for HIPAA-compliant data storage.'
+    },
+    stats: {
+      timeline: '16 Weeks',
+      screens: '30+',
+      teamSize: '10 Experts'
+    },
+    features: [
+      { title: 'HD Video Consultations', description: 'Secure, encrypted video calls ensuring patient privacy and clear communication.' },
+      { title: 'Digital Prescriptions', description: 'Doctors can generate and sign prescriptions digitally, which patients can download instantly.' },
+      { title: 'Appointment Scheduling', description: 'Smart calendar system for doctors to manage availability and patients to book slots easily.' },
+      { title: 'Health Records', description: 'Centralized storage for medical history, lab reports, and past prescriptions.' }
+    ],
+    techStack: ['React Native', 'Firebase', 'WebRTC', 'Node.js', 'MongoDB'],
+    result: 'Facilitated over 10,000 remote consultations in the first year, significantly improving healthcare access in rural regions.',
+    image: '/assets/img/portfolio/healthcare.jpg'
+  },
+  'ecommerce-pro': {
+    title: 'E-Commerce Pro',
+    category: 'E-Commerce',
+    bannerImage: '/assets/img/portfolio/ecommerce-banner.jpg',
+    overview: {
+      clientBackground: 'A fast-fashion retail brand wanting to expand their offline presence to a global online market.',
+      objective: 'To develop a scalable, multi-currency e-commerce platform with AI-driven recommendations to boost sales.',
+      solution: 'We utilized Next.js for a fast storefront and Shopify API for robust backend management, integrating custom AI models for personalized shopping experiences.'
+    },
+    stats: {
+      timeline: '10 Weeks',
+      screens: '25+',
+      teamSize: '6 Experts'
+    },
+    features: [
+      { title: 'AI Recommendations', description: 'Machine learning algorithms suggest products based on browsing history and purchase patterns.' },
+      { title: 'Multi-Currency Support', description: 'Auto-detects user location to display prices in their local currency.' },
+      { title: 'Real-time Inventory', description: 'Syncs stock levels across online and offline stores to prevent overselling.' },
+      { title: 'Seamless Checkout', description: 'Optimized one-page checkout process with multiple payment gateway integrations.' }
+    ],
+    techStack: ['Next.js', 'Shopify API', 'Tailwind CSS', 'Stripe', 'Algolia'],
+    result: 'Online sales grew by 150% in the first quarter, with a 25% increase in average order value due to AI recommendations.',
+    image: '/assets/img/portfolio/ecommerce.jpg'
+  },
+  'real-estate-hub': {
+    title: 'Real Estate Hub',
+    category: 'Web Platform',
+    bannerImage: '/assets/img/portfolio/realestate-banner.jpg',
+    overview: {
+      clientBackground: 'A real estate agency looking to digitize their property showcase and streamline agent-client interactions.',
+      objective: 'To build a feature-rich property portal with virtual tours, advanced search filters, and CRM integration.',
+      solution: 'We developed a custom web platform using React and Django, integrating Matterport for 3D virtual tours and a custom CRM for lead management.'
+    },
+    stats: {
+      timeline: '14 Weeks',
+      screens: '40+',
+      teamSize: '9 Experts'
+    },
+    features: [
+      { title: '360° Virtual Tours', description: 'Immersive 3D walkthroughs allowing users to explore properties remotely.' },
+      { title: 'Advanced Search', description: 'Granular filters for location, price, amenities, and property type.' },
+      { title: 'Mortgage Calculator', description: 'Built-in tool to estimate monthly payments based on current interest rates.' },
+      { title: 'Agent Dashboard', description: 'Dedicated portal for agents to manage listings, leads, and appointments.' }
+    ],
+    techStack: ['React', 'Django', 'PostgreSQL', 'AWS', 'Matterport API'],
+    result: 'Reduced property viewing time by 60% and doubled the number of qualified leads generated per month.',
+    image: '/assets/img/portfolio/realestate.jpg'
+  },
+  'social-media-analytics': {
+    title: 'Social Media Analytics',
+    category: 'SaaS',
+    bannerImage: '/assets/img/portfolio/social-banner.jpg',
+    overview: {
+      clientBackground: 'A marketing agency needing a unified tool to track client performance across multiple social platforms.',
+      objective: 'To create a SaaS platform that aggregates data from Facebook, Instagram, Twitter, and LinkedIn into a single dashboard.',
+      solution: 'We built a robust analytics engine using Python and Vue.js, capable of processing millions of data points to provide actionable insights.'
+    },
+    stats: {
+      timeline: '18 Weeks',
+      screens: '35+',
+      teamSize: '7 Experts'
+    },
+    features: [
+      { title: 'Unified Dashboard', description: 'View metrics from all social platforms in one consolidated view.' },
+      { title: 'Sentiment Analysis', description: 'NLP algorithms analyze comments and mentions to gauge brand sentiment.' },
+      { title: 'Competitor Benchmarking', description: 'Compare performance against key competitors to identify gaps and opportunities.' },
+      { title: 'Automated Reporting', description: 'Schedule and send white-labeled performance reports to clients automatically.' }
+    ],
+    techStack: ['Vue.js', 'Python', 'TensorFlow', 'Redis', 'PostgreSQL'],
+    result: 'Saved the agency 20+ hours per week on manual reporting and helped them win 5 new enterprise clients.',
+    image: '/assets/img/portfolio/social.jpg'
+  },
+  'travel-companion': {
+    title: 'Travel Companion App',
+    category: 'Mobile App',
+    bannerImage: '/assets/img/portfolio/travel-banner.jpg',
+    overview: {
+      clientBackground: 'A travel startup wanting to simplify the trip planning process for solo travelers and backpackers.',
+      objective: 'To develop an all-in-one app for itinerary planning, booking, and discovering local hidden gems.',
+      solution: 'We used Flutter for a seamless cross-platform experience, integrating Google Maps and various booking APIs for a comprehensive travel solution.'
+    },
+    stats: {
+      timeline: '12 Weeks',
+      screens: '28+',
+      teamSize: '6 Experts'
+    },
+    features: [
+      { title: 'Smart Itinerary Builder', description: 'Auto-generates trip plans based on interests, budget, and duration.' },
+      { title: 'Integrated Booking', description: 'Search and book flights, hotels, and tours directly within the app.' },
+      { title: 'Offline Maps', description: 'Download maps and guides for access in areas with poor connectivity.' },
+      { title: 'Local Guides', description: 'Curated recommendations from locals for authentic dining and sightseeing experiences.' }
+    ],
+    techStack: ['Flutter', 'Google Maps API', 'Node.js', 'MongoDB'],
+    result: 'Achieved 50,000 downloads in the first 6 months and featured as "App of the Day" on the App Store.',
+    image: '/assets/img/portfolio/travel.jpg'
+  },
+  'smart-home': {
+    title: 'Smart Home Controller',
+    category: 'IoT',
+    bannerImage: '/assets/img/portfolio/smarthome-banner.jpg',
+    overview: {
+      clientBackground: 'An IoT device manufacturer looking for a universal app to control their ecosystem of smart products.',
+      objective: 'To build a centralized hub that allows users to manage lighting, security, and climate control from anywhere.',
+      solution: 'We developed a secure, low-latency mobile app using React Native and AWS IoT Core for reliable device communication.'
+    },
+    stats: {
+      timeline: '20 Weeks',
+      screens: '15+',
+      teamSize: '8 Experts'
+    },
+    features: [
+      { title: 'Device Management', description: 'Add, configure, and control smart devices with a simple scan.' },
+      { title: 'Voice Control', description: 'Integration with Alexa and Google Assistant for hands-free operation.' },
+      { title: 'Energy Monitoring', description: 'Track energy consumption in real-time and get tips to save on bills.' },
+      { title: 'Security Alerts', description: 'Instant push notifications for motion detection or security breaches.' }
+    ],
+    techStack: ['React Native', 'IoT Core', 'GraphQL', 'AWS Lambda'],
+    result: 'Improved user satisfaction scores by 35% and reduced customer support tickets related to device pairing by 50%.',
+    image: '/assets/img/portfolio/smarthome.jpg'
+  },
+  'lms': {
+    title: 'Learning Management System',
+    category: 'EdTech',
+    bannerImage: '/assets/img/portfolio/lms-banner.jpg',
+    overview: {
+      clientBackground: 'A large educational institution needing to transition to remote learning during the pandemic.',
+      objective: 'To create a robust LMS that supports live classes, course management, and student progress tracking.',
+      solution: 'We built a scalable web platform using Next.js and Mux for video streaming, ensuring a smooth learning experience for thousands of students.'
+    },
+    stats: {
+      timeline: '14 Weeks',
+      screens: '50+',
+      teamSize: '12 Experts'
+    },
+    features: [
+      { title: 'Course Builder', description: 'Drag-and-drop interface for instructors to create and organize course content.' },
+      { title: 'Live Classes', description: 'Integrated video conferencing for interactive live sessions and webinars.' },
+      { title: 'Student Analytics', description: 'Detailed insights into student performance, attendance, and engagement.' },
+      { title: 'Gamification', description: 'Badges, leaderboards, and rewards to motivate students and increase completion rates.' }
+    ],
+    techStack: ['Next.js', 'Mux Video', 'Prisma', 'PostgreSQL'],
+    result: 'Successfully onboarded 5,000+ students and 200+ instructors within the first month of launch.',
+    image: '/assets/img/portfolio/lms.jpg'
+  },
 };

@@ -64,7 +64,7 @@ const developmentItems = [
   },
   {
     link: "/dating-application-development",
-    title: "Dating App Development",
+    title: "Dating App Development Company",
     description: "Custom dating apps & platforms",
     icon: HeartIcon,
   },
@@ -401,15 +401,20 @@ const OtherServicesMenu = React.memo(function OtherServicesMenu() {
   );
 });
 
+import ServicesMegaMenu from './ServicesMegaMenu';
+
 function NavList() {
   return (
     <List className="mt-4 mb-6 p-0 lg:mt-0 lg:mb-0 lg:flex-row lg:p-1 gap-x-6">
-      <DevelopmentMenu />
-      <DigitalMarketingMenu />
-      <OtherServicesMenu />
+      <ServicesMegaMenu />
       <Link href="/blog">
         <ListItem className={`${monteserrat.className} flex items-center gap-2 py-2 pr-4 font-medium text-black hover:text-white hover:bg-accent transition-all duration-300`}>
           Blog
+        </ListItem>
+      </Link>
+      <Link href="/about">
+        <ListItem className={`${monteserrat.className} flex items-center gap-2 py-2 pr-4 font-medium text-black hover:text-white hover:bg-accent transition-all duration-300`}>
+          About Us
         </ListItem>
       </Link>
     </List>
