@@ -34,7 +34,7 @@ const Brands = () => {
     <section className='container mx-auto px-4 lg:px-8'>
       <div className="flex flex-col py-16 lg:py-20 items-center justify-between space-y-12">
         <h2 className='title text-center mx-auto'>Our Technology Partners</h2>
-        <div className="w-full">
+        <div className="w-full overflow-hidden">
           <Marquee gradient={true} gradientColor="white" speed={50} pauseOnHover={true}>
             {brands.map((brand, index) => (
               <div
