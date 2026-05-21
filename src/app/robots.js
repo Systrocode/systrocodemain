@@ -3,20 +3,22 @@ export default function robots() {
     rules: [
       {
         userAgent: '*',
-        allow: ['/', '/blogs/'],
+        allow: ['/', '/blog/'],
         disallow: [
-          '/wp-admin/',
-          '/career/',
+          '/admin/',
+          '/admin-dashboard/',
+          '/admin-login/',
+          '/api/',
           '/search/',
           '*?s=',
           '*?p=',
           '/*?utm_',
           '*/feed',
           '*/rss',
-          '*/embed',
           '/blog/category/*',
           '/blog/tag/*',
-          '/thank-you/',
+          '/test-api/',
+          '/test-images/',
         ],
       },
       {
