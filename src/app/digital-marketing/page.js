@@ -196,7 +196,7 @@ const DigitalMarketing = () => {
                   href={service.link}
                   className="inline-block px-6 py-2 rounded-lg font-semibold bg-accent text-white hover:bg-accentHover transition-colors"
                 >
-                  Learn More
+                  Explore {service.title}
                 </Link>
               </motion.div>
             ))}
