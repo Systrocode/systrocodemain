@@ -2,7 +2,9 @@ import Header from '../components/Header.js';
 import Hero from '../components/Hero.js';
 import Overview from '../components/Overview.js';
 import Brands from '../components/Brands.js';
-import ServiceShowcase from '../components/ServiceShowcase.js';
+import Feature1 from '../components/Feature1.js';
+import Feature2 from '../components/Feature2.js';
+import Feature3 from '../components/Feature3.js';
 import Product from '../components/Product.js';
 import Cta from '../components/Cta.js';
 import Footer from '../components/Footer.js';
@@ -51,7 +53,9 @@ export default function Home() {
       <TechSolutions />
       <Overview />
       <Brands />
-      <ServiceShowcase />
+      <Feature1 actual={features} />
+      <Feature2 actual={features} />
+      <Feature3 actual={features} />
       <Product />
       <SEOTextSection
         title={seoText.home.title}
