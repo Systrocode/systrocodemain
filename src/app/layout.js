@@ -66,6 +66,7 @@ export default function RootLayout({ children }) {
           title="Systrocode Blog RSS Feed"
           href="/blog/rss.xml"
         />
+        <meta httpEquiv="Content-Security-Policy" content="upgrade-insecure-requests" />
 
         {/* Google tag (gtag.js) */}
         <Script
