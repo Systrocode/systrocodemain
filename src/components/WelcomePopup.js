@@ -59,7 +59,7 @@ const WelcomePopup = () => {
                         initial={{ scale: 0.9, opacity: 0 }}
                         animate={{ scale: 1, opacity: 1 }}
                         exit={{ scale: 0.9, opacity: 0 }}
-                        className={`bg-white rounded-[60px] shadow-2xl w-full max-w-7xl overflow-hidden relative flex flex-col lg:flex-row max-h-[83vh] lg:max-h-none overflow-y-auto lg:overflow-visible ${poppins.className}`}
+                        className={`bg-white rounded-2xl lg:rounded-[60px] shadow-2xl w-full max-w-7xl overflow-hidden relative flex flex-col lg:flex-row max-h-[90vh] overflow-y-auto lg:overflow-visible ${poppins.className}`}
                     >
                         {/* Close Button */}
                         <button
@@ -70,7 +70,7 @@ const WelcomePopup = () => {
                         </button>
 
                         {/* Left Side - Info & Trust */}
-                        <div className="w-full lg:w-5/12 bg-[#EBF3F9] p-8 lg:p-12 flex flex-col relative">
+                        <div className="w-full lg:w-5/12 bg-[#EBF3F9] p-5 lg:p-12 flex flex-col relative">
                             <div className="mb-5">
                                 <h2 className="text-3xl lg:text-4xl font-extrabold text-gray-900 leading-tight mb-2">
                                     Pause! Before You Press <span className="text-red-600">X</span>.
@@ -111,8 +111,8 @@ const WelcomePopup = () => {
                             </div>
 
                             {/* Info Box */}
-                            <div className="bg-white rounded-3xl p-5 shadow-sm mb-auto">
-                                <div className="grid grid-cols-2 gap-4">
+                            <div className="bg-white rounded-3xl p-4 lg:p-5 shadow-sm mb-auto">
+                                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                                     {/* Freebies */}
                                     <div>
                                         <h3 className="font-bold text-gray-900 text-xs mb-2">Our Experts Provide Free:</h3>
@@ -134,24 +134,24 @@ const WelcomePopup = () => {
                                     {/* Contact */}
                                     <div>
                                         <h3 className="font-bold text-gray-900 text-xs mb-2">Have a Question? Let's Talk!</h3>
-                                        <div className="space-y-0.5 text-[15px] text-gray-600">
+                                        <div className="space-y-1 text-xs text-gray-600">
                                             <div className="flex items-center gap-2">
                                                 <div className="w-4 flex justify-center flex-shrink-0">
-                                                    <FaPhoneAlt className="text-blue-500" />
+                                                    <FaPhoneAlt className="text-blue-500 text-[10px]" />
                                                 </div>
-                                                <span>+91-9672040456</span>
+                                                <span className="truncate">+91-9672040456</span>
                                             </div>
                                             <div className="flex items-center gap-2">
                                                 <div className="w-4 flex justify-center flex-shrink-0">
-                                                    <FaEnvelope className="text-red-500" />
+                                                    <FaEnvelope className="text-red-500 text-[10px]" />
                                                 </div>
-                                                <span>sales@systrocode.tech</span>
+                                                <span className="truncate">sales@systrocode.tech</span>
                                             </div>
                                             <div className="flex items-start gap-2">
                                                 <div className="w-4 flex justify-center flex-shrink-0 mt-0.5">
-                                                    <FaMapMarkerAlt className="text-green-500" />
+                                                    <FaMapMarkerAlt className="text-green-500 text-[10px]" />
                                                 </div>
-                                                <span className="leading-tight">A-15 Ashok vihar, Near sector-15, Girdhar marg, Malviya nagar, Jaipur</span>
+                                                <span className="leading-tight text-[10px]">A-15 Ashok vihar, Near sector-15, Girdhar marg, Malviya nagar, Jaipur</span>
                                             </div>
                                         </div>
                                     </div>
@@ -159,7 +159,7 @@ const WelcomePopup = () => {
                             </div>
 
                             {/* Logos Footer */}
-                            <div className="mt-4 flex justify-between items-center opacity-50 grayscale px-2">
+                            <div className="mt-4 hidden lg:flex justify-between items-center opacity-50 grayscale px-2">
                                 {/* Placeholders for logos */}
                                 <span className="font-black text-xl text-gray-800">WFFA</span>
                                 <span className="font-bold text-lg text-gray-800 italic">Whirlpool</span>
@@ -169,7 +169,7 @@ const WelcomePopup = () => {
                         </div>
 
                         {/* Right Side - Form */}
-                        <div className="w-full lg:w-7/12 bg-white p-8 lg:p-12 flex flex-col">
+                        <div className="w-full lg:w-7/12 bg-white p-5 lg:p-12 flex flex-col">
                             <div className="mb-4">
                                 <p className="text-gray-700 text-[18px] leading-[24px] mb-1 font-semibold">See What You Could Be Missing!</p>
                                 <h2 className="text-xl lg:text-2xl font-black text-gray-900 leading-tight">
@@ -206,7 +206,7 @@ const WelcomePopup = () => {
                                     <textarea rows="3" placeholder="Share Project Details / Overview of Your Idea (Help Us Come Back Stronger)" required className="w-full bg-white border border-gray-300 rounded-xl px-3 py-1.5 text-sm focus:ring-1 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all resize-none"></textarea>
                                 </div>
 
-                                <div className="flex items-center justify-between mt-2">
+                                <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2 mt-2">
                                     <button type="button" className="flex items-center text-blue-500 text-sm font-bold hover:underline">
                                         <div className="bg-blue-500 text-white rounded-[4px] p-0.5 mr-2 flex items-center justify-center w-5 h-5">
                                             <FaPlus className="text-[10px]" />
@@ -221,7 +221,7 @@ const WelcomePopup = () => {
 
                                 <div className="mt-2">
                                     <label className="block text-xs font-medium text-gray-700 mb-1">Are you human? <span className="text-red-500">*</span></label>
-                                    <div className="flex items-center gap-4">
+                                    <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-2 sm:gap-4">
                                         <div className="bg-blue-100 px-4 py-1.5 rounded-xl border border-blue-200 font-bold text-gray-800 text-sm min-w-[80px] text-center">
                                             {captcha.q}
                                         </div>
@@ -232,7 +232,7 @@ const WelcomePopup = () => {
                                             placeholder="CAPTCHA Result"
                                             className="flex-1 bg-white border border-gray-300 rounded-xl px-3 py-1.5 text-sm focus:outline-none focus:border-blue-500"
                                         />
-                                        <button type="submit" className="bg-[#ED1C24] text-white font-bold px-8 py-1.5 rounded-xl hover:bg-[#C41219] transition-colors shadow-sm text-sm">
+                                        <button type="submit" className="bg-[#ED1C24] text-white font-bold px-8 py-2 rounded-xl hover:bg-[#C41219] transition-colors shadow-sm text-sm w-full sm:w-auto">
                                             Submit
                                         </button>
                                     </div>
