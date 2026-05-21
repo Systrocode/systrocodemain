@@ -2,9 +2,9 @@
 import LogoImg from './assets/img/header/logo.webp';
 // import LogoImg from '../src/assets/img/header/logo.svg';
 const MainImg = '/assets/img/hero/image.svg';
-import ServiceImg from './assets/img/Services/hero.png';
-import ContactImg from './assets/img/Contact/hero.png';
-import AboutImg from './assets/img/About/hero.png';
+import ServiceImg from './assets/img/Services/hero.webp';
+import ContactImg from './assets/img/Contact/hero.webp';
+import AboutImg from './assets/img/About/hero.webp';
 const OverviewProductImg = '/assets/img/overview/product.svg';
 const Feature1Img = '/assets/img/features/feature1-img.svg';
 const Feature2Img = '/assets/img/features/feature2-img.svg';
@@ -29,13 +29,13 @@ const InstagramIcon = '/assets/img/copyright/instagram8.svg';
 const Webdev1 = '/assets/img/Services/webd1.gif';
 const Webdev2 = '/assets/img/Services/webd2.gif';
 const Webdev3 = '/assets/img/Services/webd3.gif';
-import Webdesign from './assets/img/Services/webdesign.jpg';
-const UiUxDesign = '/assets/img/Services/uiux-design.png';
-const SoftwareDev = '/assets/img/Services/software-dev.png';
-import seoi from './assets/img/Services/seo.jpg';
-const AiAutomation = '/assets/img/Services/ai.png';
-const DataAnalysis = '/assets/img/Services/data.jpg';
-const CyberSecurity = '/assets/img/Services/cyber.png';
+import Webdesign from './assets/img/Services/webdesign.webp';
+const UiUxDesign = '/assets/img/Services/uiux-design.webp';
+const SoftwareDev = '/assets/img/Services/software-dev.webp';
+import seoi from './assets/img/Services/seo.webp';
+const AiAutomation = '/assets/img/Services/ai.webp';
+const DataAnalysis = '/assets/img/Services/data.webp';
+const CyberSecurity = '/assets/img/Services/cyber.webp';
 
 
 export const header = {
@@ -105,14 +105,14 @@ export const hero = {
     subtitle: "Welcome to SYSTROCODE, your premier dating app development partner. We specialize in creating engaging, secure, and scalable dating applications that connect people. From matching algorithms to real-time chat, we build platforms that foster meaningful connections.",
     btnText: 'Get A Free Quote',
     side: '— SystroCode',
-    image: '/assets/img/Services/mobile-dev.png',
+    image: '/assets/img/Services/mobile-dev.webp',
   },
   aiCharacterDatingAppDevelopment: {
     title: 'AI Character Dating App Development',
     subtitle: "Welcome to SYSTROCODE, the future of companionship. We build immersive AI character dating apps where users can create, interact, and form deep emotional connections with intelligent virtual partners. Experience the next generation of social interaction.",
     btnText: 'Get A Free Quote',
     side: '— SystroCode',
-    image: '/assets/img/Services/ai.png',
+    image: '/assets/img/Services/ai.webp',
   },
   dataAnalysis: {
     title: 'Data Analysis',
@@ -238,7 +238,7 @@ export const mobileDevelopment = {
       'Unlock the potential of mobile technology with Systrocode. Our dedicated team of mobile developers excels in creating high-performance iOS and Android applications that engage users and drive business growth. From native development to cross-platform solutions, we transform your vision into seamless mobile experiences. Partner with us and elevate your project to new heights with our expertise and creativity in mobile development.',
     btnLink: 'Learn more',
     btnIcon: ArrowRightImg,
-    image: '/assets/img/Services/mobile-dev.png',
+    image: '/assets/img/Services/mobile-dev.webp',
   },
 };
 
@@ -250,7 +250,7 @@ export const datingAppDevelopment = {
       'Unlock the potential of the dating market with Systrocode. Our dedicated team of developers excels in creating engaging, secure, and feature-rich dating applications. From advanced matching algorithms to real-time chat and video calling, we build platforms that foster meaningful connections. Partner with us to create the next big thing in the dating world.',
     btnLink: 'Learn more',
     btnIcon: ArrowRightImg,
-    image: '/assets/img/Services/mobile-dev.png',
+    image: '/assets/img/Services/mobile-dev.webp',
   },
 };
 
@@ -262,7 +262,7 @@ export const aiCharacterDatingAppDevelopment = {
       'Step into the future of relationships with Systrocode. We develop advanced AI character dating apps that offer personalized, evolving, and emotionally intelligent virtual companions. From custom personality creation to immersive roleplay scenarios, we build platforms that redefine digital intimacy. Partner with us to lead the AI companionship revolution.',
     btnLink: 'Learn more',
     btnIcon: ArrowRightImg,
-    image: '/assets/img/Services/ai.png',
+    image: '/assets/img/Services/ai.webp',
   },
 };
 
@@ -497,8 +497,8 @@ export const cta = {
   title: '20M+ downloaded from 32 different countries',
   subtitle: 'Try demo for 7 days with full features.',
   btnText: 'Try free demo',
-  img1: '/assets/img/cta/cta1.png',
-  img2: '/assets/img/cta/cta2.png',
+  img1: '/assets/img/cta/cta1.webp',
+  img2: '/assets/img/cta/cta2.webp',
 };
 
 export const footer = {
@@ -616,7 +616,7 @@ export default function Hero() {
       
       <p>Ready to upgrade? Check out the <a href="https://nextjs.org/blog/next-15" target="_blank" rel="noopener noreferrer">official documentation</a> or contact our team for a seamless migration strategy.</p>
     `,
-    image: "/assets/img/blog/nextjs-15.jpg",
+    image: "/assets/img/blog/nextjs-15.webp",
     posterConfig: {
       bgGradient: 'from-purple-600 to-indigo-700',
       icon: '⚡',
@@ -662,7 +662,7 @@ export default function Hero() {
       
       <p>Ready to transform your marketing with AI? SystroCode specializes in implementing AI-powered marketing solutions that drive real results.</p>
     `,
-    image: "/assets/img/blog/ai-marketing.jpg",
+    image: "/assets/img/blog/ai-marketing.webp",
     posterConfig: {
       bgGradient: 'from-green-500 to-emerald-600',
       icon: '🤖',
@@ -717,7 +717,7 @@ export default function Hero() {
       
       <p>Ready to unlock the power of your data? SystroCode's data analytics experts can help you build a comprehensive analytics strategy that drives business growth.</p>
     `,
-    image: "/assets/img/blog/data-analytics.jpg",
+    image: "/assets/img/blog/data-analytics.webp",
     posterConfig: {
       bgGradient: 'from-blue-500 to-cyan-600',
       icon: '📊',
@@ -778,7 +778,7 @@ export default function Hero() {
       
       <p>At SystroCode, we help small businesses implement comprehensive cybersecurity strategies that fit their budget and protect their valuable assets. Don't wait until it's too late—secure your business today.</p>
     `,
-    image: "/assets/img/blog/cybersecurity.jpg",
+    image: "/assets/img/blog/cybersecurity.webp",
     posterConfig: {
       bgGradient: 'from-red-500 to-rose-600',
       icon: '🛡️',
@@ -854,7 +854,7 @@ export default function Hero() {
       
       <p>Ready to revolutionize your business operations? SystroCode's AI automation experts can help you identify opportunities and implement solutions that drive real business value.</p>
     `,
-    image: "/assets/img/blog/ai-automation.jpg",
+    image: "/assets/img/blog/ai-automation.webp",
     posterConfig: {
       bgGradient: 'from-orange-500 to-amber-600',
       icon: '⚙️',
@@ -936,7 +936,7 @@ export default function Hero() {
       
       <p>At SystroCode, we specialize in creating mobile-first responsive designs that provide exceptional user experiences across all devices. Let us help you reach your mobile audience effectively.</p>
     `,
-    image: "/assets/img/blog/mobile-first-design.jpg",
+    image: "/assets/img/blog/mobile-first-design.webp",
     posterConfig: {
       bgGradient: 'from-purple-500 to-violet-600',
       icon: '📱',
@@ -1004,7 +1004,7 @@ export default function Hero() {
       
       <p>Ready to elevate your social media presence? SystroCode's social media experts can help you develop and execute a comprehensive strategy that drives real business results.</p>
     `,
-    image: "/assets/img/blog/ai-marketing.jpg",
+    image: "/assets/img/blog/ai-marketing.webp",
     posterConfig: {
       bgGradient: 'from-pink-500 to-rose-600',
       icon: '📱',
@@ -1072,7 +1072,7 @@ export default function Hero() {
       
       <p>Ready to transform your email marketing with automation? SystroCode's email marketing specialists can help you design and implement automated workflows that drive results.</p>
     `,
-    image: "/assets/img/blog/ai-marketing.jpg",
+    image: "/assets/img/blog/ai-marketing.webp",
     category: "Digital Marketing",
     author: "Systrocode",
     date: "June 28, 2025",
@@ -1164,7 +1164,7 @@ export default function Hero() {
       
       <p>Ready to optimize your content marketing ROI? SystroCode's content marketing experts can help you develop measurement frameworks that demonstrate real business impact.</p>
     `,
-    image: "/assets/img/blog/ai-marketing.jpg",
+    image: "/assets/img/blog/ai-marketing.webp",
     category: "Digital Marketing",
     author: "Systrocode",
     date: "June 25, 2025",
@@ -1195,7 +1195,7 @@ export const portfolioData = {
   'fintech-dashboard': {
     title: 'FinTech Dashboard',
     category: 'Web Application',
-    bannerImage: '/assets/img/portfolio/fintech-banner.jpg', // Placeholder
+    bannerImage: '/assets/img/portfolio/fintech-banner.webp', // Placeholder
     overview: {
       clientBackground: 'A leading financial services provider based in New York, looking to modernize their legacy systems for better performance and user experience.',
       objective: 'To build a real-time, high-frequency trading dashboard that allows users to track portfolios, analyze market trends, and execute trades with milliseconds latency.',
@@ -1214,12 +1214,12 @@ export const portfolioData = {
     ],
     techStack: ['Next.js', 'Node.js', 'PostgreSQL', 'D3.js', 'WebSockets', 'Redis'],
     result: 'The new dashboard reduced data latency by 90% and increased user engagement by 40% within the first three months of launch.',
-    image: '/assets/img/portfolio/fintech.jpg'
+    image: '/assets/img/portfolio/fintech.webp'
   },
   'healthcare-connect': {
     title: 'HealthCare Connect',
     category: 'Mobile App',
-    bannerImage: '/assets/img/portfolio/healthcare-banner.jpg',
+    bannerImage: '/assets/img/portfolio/healthcare-banner.webp',
     overview: {
       clientBackground: 'A healthcare startup aiming to bridge the gap between patients and doctors in remote areas.',
       objective: 'To create a telemedicine platform that enables secure video consultations, digital prescriptions, and easy appointment management.',
@@ -1238,12 +1238,12 @@ export const portfolioData = {
     ],
     techStack: ['React Native', 'Firebase', 'WebRTC', 'Node.js', 'MongoDB'],
     result: 'Facilitated over 10,000 remote consultations in the first year, significantly improving healthcare access in rural regions.',
-    image: '/assets/img/portfolio/healthcare.jpg'
+    image: '/assets/img/portfolio/healthcare.webp'
   },
   'ecommerce-pro': {
     title: 'E-Commerce Pro',
     category: 'E-Commerce',
-    bannerImage: '/assets/img/portfolio/ecommerce-banner.jpg',
+    bannerImage: '/assets/img/portfolio/ecommerce-banner.webp',
     overview: {
       clientBackground: 'A fast-fashion retail brand wanting to expand their offline presence to a global online market.',
       objective: 'To develop a scalable, multi-currency e-commerce platform with AI-driven recommendations to boost sales.',
@@ -1262,12 +1262,12 @@ export const portfolioData = {
     ],
     techStack: ['Next.js', 'Shopify API', 'Tailwind CSS', 'Stripe', 'Algolia'],
     result: 'Online sales grew by 150% in the first quarter, with a 25% increase in average order value due to AI recommendations.',
-    image: '/assets/img/portfolio/ecommerce.jpg'
+    image: '/assets/img/portfolio/ecommerce.webp'
   },
   'real-estate-hub': {
     title: 'Real Estate Hub',
     category: 'Web Platform',
-    bannerImage: '/assets/img/portfolio/realestate-banner.jpg',
+    bannerImage: '/assets/img/portfolio/realestate-banner.webp',
     overview: {
       clientBackground: 'A real estate agency looking to digitize their property showcase and streamline agent-client interactions.',
       objective: 'To build a feature-rich property portal with virtual tours, advanced search filters, and CRM integration.',
@@ -1286,12 +1286,12 @@ export const portfolioData = {
     ],
     techStack: ['React', 'Django', 'PostgreSQL', 'AWS', 'Matterport API'],
     result: 'Reduced property viewing time by 60% and doubled the number of qualified leads generated per month.',
-    image: '/assets/img/portfolio/realestate.jpg'
+    image: '/assets/img/portfolio/realestate.webp'
   },
   'social-media-analytics': {
     title: 'Social Media Analytics',
     category: 'SaaS',
-    bannerImage: '/assets/img/portfolio/social-banner.jpg',
+    bannerImage: '/assets/img/portfolio/social-banner.webp',
     overview: {
       clientBackground: 'A marketing agency needing a unified tool to track client performance across multiple social platforms.',
       objective: 'To create a SaaS platform that aggregates data from Facebook, Instagram, Twitter, and LinkedIn into a single dashboard.',
@@ -1310,12 +1310,12 @@ export const portfolioData = {
     ],
     techStack: ['Vue.js', 'Python', 'TensorFlow', 'Redis', 'PostgreSQL'],
     result: 'Saved the agency 20+ hours per week on manual reporting and helped them win 5 new enterprise clients.',
-    image: '/assets/img/portfolio/social.jpg'
+    image: '/assets/img/portfolio/social.webp'
   },
   'travel-companion': {
     title: 'Travel Companion App',
     category: 'Mobile App',
-    bannerImage: '/assets/img/portfolio/travel-banner.jpg',
+    bannerImage: '/assets/img/portfolio/travel-banner.webp',
     overview: {
       clientBackground: 'A travel startup wanting to simplify the trip planning process for solo travelers and backpackers.',
       objective: 'To develop an all-in-one app for itinerary planning, booking, and discovering local hidden gems.',
@@ -1334,12 +1334,12 @@ export const portfolioData = {
     ],
     techStack: ['Flutter', 'Google Maps API', 'Node.js', 'MongoDB'],
     result: 'Achieved 50,000 downloads in the first 6 months and featured as "App of the Day" on the App Store.',
-    image: '/assets/img/portfolio/travel.jpg'
+    image: '/assets/img/portfolio/travel.webp'
   },
   'smart-home': {
     title: 'Smart Home Controller',
     category: 'IoT',
-    bannerImage: '/assets/img/portfolio/smarthome-banner.jpg',
+    bannerImage: '/assets/img/portfolio/smarthome-banner.webp',
     overview: {
       clientBackground: 'An IoT device manufacturer looking for a universal app to control their ecosystem of smart products.',
       objective: 'To build a centralized hub that allows users to manage lighting, security, and climate control from anywhere.',
@@ -1358,12 +1358,12 @@ export const portfolioData = {
     ],
     techStack: ['React Native', 'IoT Core', 'GraphQL', 'AWS Lambda'],
     result: 'Improved user satisfaction scores by 35% and reduced customer support tickets related to device pairing by 50%.',
-    image: '/assets/img/portfolio/smarthome.jpg'
+    image: '/assets/img/portfolio/smarthome.webp'
   },
   'lms': {
     title: 'Learning Management System',
     category: 'EdTech',
-    bannerImage: '/assets/img/portfolio/lms-banner.jpg',
+    bannerImage: '/assets/img/portfolio/lms-banner.webp',
     overview: {
       clientBackground: 'A large educational institution needing to transition to remote learning during the pandemic.',
       objective: 'To create a robust LMS that supports live classes, course management, and student progress tracking.',
@@ -1382,6 +1382,6 @@ export const portfolioData = {
     ],
     techStack: ['Next.js', 'Mux Video', 'Prisma', 'PostgreSQL'],
     result: 'Successfully onboarded 5,000+ students and 200+ instructors within the first month of launch.',
-    image: '/assets/img/portfolio/lms.jpg'
+    image: '/assets/img/portfolio/lms.webp'
   },
 };

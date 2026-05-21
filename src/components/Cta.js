@@ -1,7 +1,7 @@
 "use client";
 import Image from 'next/image';
 import React, { useEffect } from 'react';
-import cta from "../assets/img/cta/cta.png";
+import cta from "../assets/img/cta/cta.webp";
 import { animateCTA } from '@/utils/animations';
 
 

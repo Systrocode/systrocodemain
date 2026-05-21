@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import image from '../assets/img/Privacy/privacy.png';
+import image from '../assets/img/Privacy/privacy.webp';
 
 const PrivacyHero = () => {
 

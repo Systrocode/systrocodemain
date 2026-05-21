@@ -1,7 +1,7 @@
 "use client";
 import { product } from '@/data';
 import React,{ useState }  from 'react';
-import ArrowImg from '../assets/img/product/cards/arrow.png';
+import ArrowImg from '../assets/img/product/cards/arrow.webp';
 import Image from 'next/image';
 import AnimatedSvgIcon from './AnimatedSvgIcon';
 import Link from 'next/link';

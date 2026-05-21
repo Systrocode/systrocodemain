@@ -26,7 +26,7 @@ export const metadata = {
     siteName: 'Systrocode',
     images: [
       {
-        url: 'https://systrocode.tech/assets/img/blog/blog-og-image.jpg',
+        url: 'https://systrocode.tech/assets/img/blog/blog-og-image.webp',
         width: 1200,
         height: 630,
         alt: 'Systrocode Blog - Tech and Marketing Insights',
@@ -38,7 +38,7 @@ export const metadata = {
     title: 'Systrocode Blog - Expert Tech & Marketing Insights',
     description: 'Explore practical insights on web development, digital marketing, data analytics, and technology trends.',
     creator: '@systrocode',
-    images: ['https://systrocode.tech/assets/img/blog/blog-og-image.jpg'],
+    images: ['https://systrocode.tech/assets/img/blog/blog-og-image.webp'],
   },
   alternates: {
     canonical: 'https://systrocode.tech/blog',

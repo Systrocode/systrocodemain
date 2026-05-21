@@ -5,19 +5,19 @@ import Marquee from "react-fast-marquee";
 
 // Import client logos
 // PNGs from src/assets (Module imports)
-import jpmorgan from "../assets/img/overview/brands/jpmorgan.png";
-import hdfc from "../assets/img/overview/brands/hdfc-bank.png";
-import emirates from "../assets/img/overview/brands/emirates.png";
-import skoda from "../assets/img/overview/brands/skoda.png";
-import hsbc from "../assets/img/overview/brands/hsbc.png";
-import tnt from "../assets/img/overview/brands/tnt-sports.png";
-import tesla from "../assets/img/overview/brands/tesla.png";
-import byjus from "../assets/img/overview/brands/byjus.png";
-import airbnb from "../assets/img/overview/brands/airbnb.png";
-import au from "../assets/img/overview/brands/au.png";
-import binance from "../assets/img/overview/brands/binance.png";
-import hilton from "../assets/img/overview/brands/hilton.png";
-import myntra from "../assets/img/overview/brands/myntra.png";
+import jpmorgan from "../assets/img/overview/brands/jpmorgan.webp";
+import hdfc from "../assets/img/overview/brands/hdfc-bank.webp";
+import emirates from "../assets/img/overview/brands/emirates.webp";
+import skoda from "../assets/img/overview/brands/skoda.webp";
+import hsbc from "../assets/img/overview/brands/hsbc.webp";
+import tnt from "../assets/img/overview/brands/tnt-sports.webp";
+import tesla from "../assets/img/overview/brands/tesla.webp";
+import byjus from "../assets/img/overview/brands/byjus.webp";
+import airbnb from "../assets/img/overview/brands/airbnb.webp";
+import au from "../assets/img/overview/brands/au.webp";
+import binance from "../assets/img/overview/brands/binance.webp";
+import hilton from "../assets/img/overview/brands/hilton.webp";
+import myntra from "../assets/img/overview/brands/myntra.webp";
 
 // SVGs from public/assets (String paths)
 const microsoft = "/assets/img/overview/brands/microsoft.svg";

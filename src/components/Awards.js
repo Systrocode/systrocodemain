@@ -1,8 +1,8 @@
 import React from 'react';
 import Image from 'next/image';
-import theHindu from '../assets/img/awards/the-hindu.png';
-import hindustanTimes from '../assets/img/awards/hindustan-times.png';
-import bloomberg from '../assets/img/awards/bloomberg.png';
+import theHindu from '../assets/img/awards/the-hindu.webp';
+import hindustanTimes from '../assets/img/awards/hindustan-times.webp';
+import bloomberg from '../assets/img/awards/bloomberg.webp';
 
 const Awards = () => {
     const awards = [
