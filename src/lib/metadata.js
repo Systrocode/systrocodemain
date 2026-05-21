@@ -165,8 +165,16 @@ export const generateMetadata = (pageType, customTitle = '', customDescription =
   const finalTitle = customTitle || metadata.title;
   const finalDescription = customDescription || metadata.description;
 
+  // URL slug mapping for pages where the key differs from the URL path
+  const urlSlugMap = {
+    'home': '',
+    'facebook-ads': 'facebook-instagram-ads',
+  };
+
   // Ensure title is under 60 characters for better SEO
   const optimizedTitle = finalTitle.length > 60 ? finalTitle.substring(0, 57) + '...' : finalTitle;
+
+  const pageSlug = urlSlugMap[pageType] !== undefined ? urlSlugMap[pageType] : pageType;
 
   return {
     title: optimizedTitle,
@@ -175,7 +183,7 @@ export const generateMetadata = (pageType, customTitle = '', customDescription =
     openGraph: {
       title: optimizedTitle,
       description: finalDescription,
-      url: `${baseUrl}/${pageType === 'home' ? '' : pageType}`,
+      url: `${baseUrl}/${pageSlug}`,
       type: 'website',
       siteName: 'Systrocode',
       locale: 'en_US'
@@ -187,7 +195,7 @@ export const generateMetadata = (pageType, customTitle = '', customDescription =
       creator: '@systrocode'
     },
     alternates: {
-      canonical: `${baseUrl}/${pageType === 'home' ? '' : pageType}`
+      canonical: `${baseUrl}/${pageSlug}`
     },
     robots: {
       index: true,
