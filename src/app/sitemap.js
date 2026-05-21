@@ -205,6 +205,74 @@ export default function sitemap() {
       changeFrequency: 'daily',
       priority: 0.9,
     },
+    // Industry pages
+    {
+      url: 'https://systrocode.tech/industries',
+      lastModified: new Date(),
+      changeFrequency: 'daily',
+      priority: 0.9,
+    },
+    {
+      url: 'https://systrocode.tech/industries/healthcare',
+      lastModified: new Date(),
+      changeFrequency: 'daily',
+      priority: 0.9,
+    },
+    {
+      url: 'https://systrocode.tech/industries/ecommerce',
+      lastModified: new Date(),
+      changeFrequency: 'daily',
+      priority: 0.9,
+    },
+    {
+      url: 'https://systrocode.tech/industries/fintech',
+      lastModified: new Date(),
+      changeFrequency: 'daily',
+      priority: 0.9,
+    },
+    {
+      url: 'https://systrocode.tech/industries/education',
+      lastModified: new Date(),
+      changeFrequency: 'daily',
+      priority: 0.9,
+    },
+    {
+      url: 'https://systrocode.tech/industries/real-estate',
+      lastModified: new Date(),
+      changeFrequency: 'daily',
+      priority: 0.9,
+    },
+    // AI service pages
+    {
+      url: 'https://systrocode.tech/ai-chatbot-development',
+      lastModified: new Date(),
+      changeFrequency: 'daily',
+      priority: 0.9,
+    },
+    {
+      url: 'https://systrocode.tech/generative-ai',
+      lastModified: new Date(),
+      changeFrequency: 'daily',
+      priority: 0.9,
+    },
+    {
+      url: 'https://systrocode.tech/llm-development',
+      lastModified: new Date(),
+      changeFrequency: 'daily',
+      priority: 0.9,
+    },
+    {
+      url: 'https://systrocode.tech/ai-agent-development',
+      lastModified: new Date(),
+      changeFrequency: 'daily',
+      priority: 0.9,
+    },
+    {
+      url: 'https://systrocode.tech/nlp-development',
+      lastModified: new Date(),
+      changeFrequency: 'daily',
+      priority: 0.9,
+    },
     // Dynamically generated entries
     ...blogEntries,
     ...caseStudyEntries,

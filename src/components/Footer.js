@@ -8,7 +8,7 @@ import { animateFooter } from '@/utils/animations';
 
 
 const Footer = () => {
-  const { about, services, digitalMarketing, otherResources } = footer;
+  const { about, services, digitalMarketing, industries } = footer;
   const { social } = copyright;
 
   useEffect(() => {
@@ -33,7 +33,7 @@ const Footer = () => {
 
           {/* Services */}
           <div className="footer-item">
-            <div className='text-xl font-bold mb-4 text-black'>Development</div>
+            <div className='text-xl font-bold mb-4 text-black'>Development & AI</div>
             <ul className='flex flex-col gap-y-3'>
               {services.map((item, index) => (
                 <li key={index}>
@@ -55,11 +55,11 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Other Resources */}
+          {/* Industries */}
           <div className="footer-item">
-            <div className='text-xl font-bold mb-4 text-black'>Resources</div>
+            <div className='text-xl font-bold mb-4 text-black'>Industries</div>
             <ul className='flex flex-col gap-y-3'>
-              {otherResources.map((item, index) => (
+              {industries.map((item, index) => (
                 <li key={index}>
                   <Link className='text-gray-600 hover:text-accent transition text-sm' href={item.href}>{item.name}</Link>
                 </li>
