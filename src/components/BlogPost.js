@@ -132,10 +132,11 @@ const BlogPost = ({ slug }) => {
         <div className="mt-16 pt-8 border-t">
           <h3 className="text-2xl font-bold mb-6">Related Articles</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {blogPosts
-              .filter(p => p.category === post.category && p.id !== post.id)
-              .slice(0, 2)
-              .map(relatedPost => (
+            {(() => {
+              const sameCategoryPosts = blogPosts.filter(p => p.category === post.category && p.id !== post.id);
+              const otherPosts = blogPosts.filter(p => p.id !== post.id && p.category !== post.category);
+              const relatedPosts = [...sameCategoryPosts, ...otherPosts].slice(0, 3);
+              return relatedPosts.map(relatedPost => (
                 <Link 
                   key={relatedPost.id}
                   href={`/blog/${relatedPost.slug}`}
@@ -160,7 +161,8 @@ const BlogPost = ({ slug }) => {
                     </div>
                   </article>
                 </Link>
-              ))}
+              ));
+            })()}
           </div>
         </div>
       </div>
