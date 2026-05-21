@@ -43,8 +43,12 @@ const nextConfig = {
   async headers() {
     return [
       {
-        source: '/_next/:path*',
+        source: '/_next/static/:path*',
         headers: [
+          {
+            key: 'Cache-Control',
+            value: 'public, max-age=31536000, immutable',
+          },
           {
             key: 'Access-Control-Allow-Origin',
             value: '*',
@@ -65,6 +69,71 @@ const nextConfig = {
       {
         source: '/web-development-dynamic',
         destination: '/web-development',
+        permanent: true,
+      },
+      {
+        source: '/hire-developers',
+        destination: '/services',
+        permanent: true,
+      },
+      {
+        source: '/services/ai-development',
+        destination: '/ai-automation',
+        permanent: true,
+      },
+      {
+        source: '/mvp-development',
+        destination: '/software-development',
+        permanent: true,
+      },
+      {
+        source: '/offshore-development',
+        destination: '/services',
+        permanent: true,
+      },
+      {
+        source: '/life-at-systrocode',
+        destination: '/about',
+        permanent: true,
+      },
+      {
+        source: '/services/digital-transformation',
+        destination: '/services',
+        permanent: true,
+      },
+      {
+        source: '/services/generative-ai',
+        destination: '/ai-automation',
+        permanent: true,
+      },
+      {
+        source: '/ecommerce-development',
+        destination: '/web-development',
+        permanent: true,
+      },
+      {
+        source: '/write-for-us',
+        destination: '/blog',
+        permanent: true,
+      },
+      {
+        source: '/partner',
+        destination: '/contact',
+        permanent: true,
+      },
+      {
+        source: '/process',
+        destination: '/about',
+        permanent: true,
+      },
+      {
+        source: '/careers',
+        destination: '/about',
+        permanent: true,
+      },
+      {
+        source: '/blog/chandra-grahan-2025-sutak-kaal-timing',
+        destination: '/blog',
         permanent: true,
       },
     ];

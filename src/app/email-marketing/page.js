@@ -5,6 +5,8 @@ import { motion } from 'framer-motion';
 import { fadeIn } from '../../utils/animations';
 import { NavbarMT } from '@/components/NavbarMT';
 import Footer from '@/components/Footer';
+import SEOFAQSection from '@/components/SEOFAQSection';
+import { pageFAQs } from '@/data/seoFAQs';
 
 const EmailMarketing = () => {
   const emailServices = [
@@ -275,6 +277,10 @@ const EmailMarketing = () => {
           </motion.div>
         </div>
       </section>
+      <SEOFAQSection
+        seoContent={pageFAQs.emailMarketing.seoContent}
+        faqs={pageFAQs.emailMarketing.faqs}
+      />
   <Footer />
     </div>
   );

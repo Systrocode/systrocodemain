@@ -12,6 +12,8 @@ import Cta from '@/components/Cta.js';
 import Footer from '@/components/Footer.js';
 import { aiauto, features, hero } from '@/data.js';
 import { NavbarMT } from '@/components/NavbarMT';
+import SEOFAQSection from '@/components/SEOFAQSection';
+import { pageFAQs } from '@/data/seoFAQs';
 
 export default function Home() {
 
@@ -72,6 +74,11 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <SEOFAQSection
+        seoContent={pageFAQs.aiAutomation.seoContent}
+        faqs={pageFAQs.aiAutomation.faqs}
+        subtitle="Common questions about AI automation services"
+      />
       <Cta/>
       <Footer />
       {/* <div className='h-[4000px]'></div> */}

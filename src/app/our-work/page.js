@@ -7,6 +7,8 @@ import { motion } from 'framer-motion';
 import { fadeIn } from '@/utils/animations';
 import Image from 'next/image';
 import Link from 'next/link';
+import SEOFAQSection from '@/components/SEOFAQSection';
+import { pageFAQs } from '@/data/seoFAQs';
 
 import { projects } from '@/data/projects';
 
@@ -81,6 +83,11 @@ const SuccessStories = () => {
                 </div>
             </section>
 
+            <SEOFAQSection
+                seoContent={pageFAQs.ourWork.seoContent}
+                faqs={pageFAQs.ourWork.faqs}
+                subtitle="Questions about our project portfolio and capabilities"
+            />
             <Cta />
             <Footer />
         </div>

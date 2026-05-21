@@ -10,6 +10,8 @@ import Cta from '@/components/Cta.js';
 import Footer from '@/components/Footer.js';
 import { features, hero, datingAppDevelopment } from '@/data.js';
 import { NavbarMT } from '@/components/NavbarMT';
+import SEOFAQSection from '@/components/SEOFAQSection';
+import { pageFAQs } from '@/data/seoFAQs';
 
 export default function DatingAppDevelopment() {
 
@@ -68,6 +70,11 @@ export default function DatingAppDevelopment() {
                     </div>
                 </div>
             </section>
+            <SEOFAQSection
+                seoContent={pageFAQs.datingAppDevelopment.seoContent}
+                faqs={pageFAQs.datingAppDevelopment.faqs}
+                subtitle="Common questions about dating app development"
+            />
             <Cta />
             <Footer />
         </div>

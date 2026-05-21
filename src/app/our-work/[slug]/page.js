@@ -8,6 +8,8 @@ import { fadeIn } from '@/utils/animations';
 import Image from 'next/image';
 import { projects } from '@/data/projects';
 import { notFound } from 'next/navigation';
+import SEOFAQSection from '@/components/SEOFAQSection';
+import { pageFAQs } from '@/data/seoFAQs';
 
 import Link from 'next/link';
 
@@ -181,6 +183,11 @@ export default function ProjectDetails({ params }) {
                 </div>
             </section>
 
+            <SEOFAQSection
+                seoContent={pageFAQs.ourWork.seoContent}
+                faqs={pageFAQs.ourWork.faqs}
+                subtitle="Questions about our project work and capabilities"
+            />
             <Cta />
             <Footer />
         </div>

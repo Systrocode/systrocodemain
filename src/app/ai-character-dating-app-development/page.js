@@ -10,6 +10,8 @@ import Cta from '@/components/Cta.js';
 import Footer from '@/components/Footer.js';
 import { features, hero, aiCharacterDatingAppDevelopment } from '@/data.js';
 import { NavbarMT } from '@/components/NavbarMT';
+import SEOFAQSection from '@/components/SEOFAQSection';
+import { pageFAQs } from '@/data/seoFAQs';
 
 export default function AICharacterDatingAppDevelopment() {
 
@@ -68,6 +70,11 @@ export default function AICharacterDatingAppDevelopment() {
                     </div>
                 </div>
             </section>
+            <SEOFAQSection
+                seoContent={pageFAQs.aiCharacterDating.seoContent}
+                faqs={pageFAQs.aiCharacterDating.faqs}
+                subtitle="Common questions about AI character dating app development"
+            />
             <Cta />
             <Footer />
         </div>

@@ -34,7 +34,7 @@ const UiUxDesign = '/assets/img/Services/uiux-design.png';
 const SoftwareDev = '/assets/img/Services/software-dev.png';
 import seoi from './assets/img/Services/seo.jpg';
 const AiAutomation = '/assets/img/Services/ai.png';
-const DataAnalysis = '/assets/img/Services/data.png';
+const DataAnalysis = '/assets/img/Services/data.jpg';
 const CyberSecurity = '/assets/img/Services/cyber.png';
 
 
@@ -504,37 +504,36 @@ export const cta = {
 export const footer = {
   about: [
     { name: 'About Us', href: '/about' },
-    { name: 'Our Process', href: '/process' },
-    { name: 'Partner with us', href: '/partner' },
-    { name: 'Write for us', href: '/write-for-us' },
-    { name: 'Life at Systrocode', href: '/life-at-systrocode' },
+    { name: 'Our Work', href: '/our-work' },
+    { name: 'Services', href: '/services' },
+    { name: 'Blog', href: '/blog' },
+    { name: 'Contact Us', href: '/contact' },
   ],
   services: [
-    { name: 'Digital Transformation Services', href: '/services/digital-transformation' },
-    { name: 'AI Development', href: '/services/ai-development' },
-    { name: 'Generative AI Development', href: '/services/generative-ai' },
     { name: 'Web Development', href: '/web-development' },
     { name: 'Mobile App Development', href: '/mobile-development' },
     { name: 'Custom Software Development', href: '/software-development' },
-    { name: 'Ecommerce Development', href: '/ecommerce-development' },
-    { name: 'Hire Developers', href: '/hire-developers' },
-    { name: 'MVP Development', href: '/mvp-development' },
-    { name: 'Offshore Software Development', href: '/offshore-development' },
+    { name: 'AI Automation', href: '/ai-automation' },
+    { name: 'UI/UX Design', href: '/web-design' },
+    { name: 'Dating App Development', href: '/dating-application-development' },
+    { name: 'Data Analysis', href: '/data-analysis' },
+    { name: 'Cyber Security', href: '/cyber-security' },
   ],
-  portfolio: [
-    { name: 'FinTech Dashboard', href: '/portfolio/fintech-dashboard' },
-    { name: 'HealthCare Connect', href: '/portfolio/healthcare-connect' },
-    { name: 'E-Commerce Pro', href: '/portfolio/ecommerce-pro' },
-    { name: 'Real Estate Hub', href: '/portfolio/real-estate-hub' },
-    { name: 'Social Media Analytics', href: '/portfolio/social-media-analytics' },
-    { name: 'Travel Companion App', href: '/portfolio/travel-companion' },
-    { name: 'Smart Home Controller', href: '/portfolio/smart-home' },
-    { name: 'Learning Management System', href: '/portfolio/lms' },
+  digitalMarketing: [
+    { name: 'SEO', href: '/seo' },
+    { name: 'Content Marketing', href: '/content-marketing' },
+    { name: 'Email Marketing', href: '/email-marketing' },
+    { name: 'Social Media Marketing', href: '/social-media-marketing' },
+    { name: 'Google Ads Management', href: '/google-ads-management' },
+    { name: 'PPC Advertising', href: '/ppc-advertising' },
+    { name: 'Marketing Automation', href: '/marketing-automation' },
+    { name: 'Influencer Marketing', href: '/influencer-marketing' },
   ],
   otherResources: [
-    { name: 'Blog', href: '/blog' },
-    { name: 'Careers', href: '/careers' },
-    { name: 'Contact Us', href: '/contact' },
+    { name: 'Marketing Analytics', href: '/marketing-analytics' },
+    { name: 'Conversion Rate Optimization', href: '/conversion-rate-optimization' },
+    { name: 'Digital Marketing', href: '/digital-marketing' },
+    { name: 'Our Work', href: '/our-work' },
   ],
 };
 
@@ -623,7 +622,7 @@ export default function Hero() {
   },
   {
     id: 2,
-    title: "AI-Powered Digital Marketing: Transforming Customer Engagement",
+    title: "AI-Powered Digital Marketing: Transforming Engagement",
     slug: "ai-powered-digital-marketing-2025",
     excerpt: "Discover how artificial intelligence is revolutionizing digital marketing strategies, from personalized content to predictive analytics and automated campaign optimization.",
     content: `
@@ -785,7 +784,7 @@ export default function Hero() {
   },
   {
     id: 5,
-    title: "Automation Revolution: How AI is Transforming Business Operations",
+    title: "Automation Revolution: AI Transforming Business",
     slug: "automation-revolution-ai-transforming-business",
     excerpt: "Explore how AI-powered automation is streamlining business processes, reducing costs, and improving efficiency across various industries.",
     content: `
@@ -861,7 +860,7 @@ export default function Hero() {
   },
   {
     id: 6,
-    title: "Mobile-First Design: Creating Responsive Experiences in 2025",
+    title: "Mobile-First Design: Responsive Experiences in 2025",
     slug: "mobile-first-design-responsive-experiences-2025",
     excerpt: "Learn why mobile-first design is crucial for modern web development and discover best practices for creating seamless responsive experiences.",
     content: `
@@ -1011,7 +1010,7 @@ export default function Hero() {
   },
   {
     id: 8,
-    title: "Email Marketing Automation: Strategies for Higher Conversions",
+    title: "Email Marketing Automation: Higher Conversion Strategies",
     slug: "email-marketing-automation-strategies-2025",
     excerpt: "Learn how to create effective email marketing automation workflows that nurture leads, increase customer retention, and boost conversions.",
     content: `
@@ -1163,62 +1162,6 @@ export default function Hero() {
     date: "June 25, 2025",
     readTime: "9 min",
     tags: ["Content Marketing", "ROI", "Analytics", "Measurement"]
-  },
-  {
-    id: 10,
-    title: "Chandra Grahan 2025: आज साल का अंतिम चंद्र ग्रहण, सूतक काल और समय की पूरी जानकारी",
-    slug: "chandra-grahan-2025-sutak-kaal-timing",
-    excerpt: "Chandra Grahan 2025 इस साल का अंतिम चंद्र ग्रहण है और धार्मिक दृष्टिकोण से बेहद खास माना जा रहा है। आइए जानते हैं कब लगेगा सूतक काल, ग्रहण का समय और इसका प्रभाव।",
-    content: `
-      <p>Chandra Grahan 2025 इस साल का अंतिम चंद्र ग्रहण है और धार्मिक दृष्टिकोण से बेहद खास माना जा रहा है। आइए जानते हैं कब लगेगा सूतक काल, ग्रहण का समय और इसका प्रभाव।</p>
-      
-      <h2>🕉️ चंद्रग्रहण 2025 सूतक काल कब से लगेगा?</h2>
-      
-      <p>पंचांग की गणना के अनुसार, ग्रहण आरंभ होने से 9 घंटे पहले सूतक काल शुरू हो जाता है।</p>
-      
-      <p>इस बार दोपहर 1 बजकर 57 मिनट से सूतक काल आरंभ होगा।</p>
-      
-      <p>सूतक काल के दौरान:</p>
-      <ul>
-        <li>मंदिरों के कपाट बंद रहेंगे।</li>
-        <li>पूजा-पाठ, हवन और शुभ कार्य वर्जित होंगे।</li>
-        <li>केवल वृद्ध, बच्चे और बीमार व्यक्तियों के लिए सूतक काल मान्य नहीं होता।</li>
-      </ul>
-      
-      <h2>🌌 चंद्रग्रहण 2025 का आरंभ और समापन</h2>
-      
-      <ul>
-        <li><strong>ग्रहण आरंभ:</strong> रात 9 बजकर 57 मिनट</li>
-        <li><strong>खग्रास आरंभ:</strong> रात 11 बजकर 1 मिनट</li>
-        <li><strong>ग्रहण का मध्यकाल:</strong> रात 11 बजकर 42 मिनट</li>
-        <li><strong>खग्रास समाप्त:</strong> रात 1 बजकर 23 मिनट</li>
-        <li><strong>ग्रहण समापन:</strong> मध्यरात्रि 1 बजकर 26 मिनट</li>
-      </ul>
-      
-      <h2>✨ चंद्रग्रहण 2025 का प्रभाव</h2>
-      
-      <ul>
-        <li>धार्मिक मान्यता है कि ग्रहण के दौरान शुभ कार्य नहीं करने चाहिए।</li>
-        <li>गर्भवती महिलाओं को विशेष सावधानी बरतनी चाहिए।</li>
-        <li>ग्रहण काल में मंत्र जाप, ध्यान और भगवान का स्मरण करना शुभ माना जाता है।</li>
-        <li>ग्रहण समाप्त होने के बाद स्नान, दान और पूजा करना विशेष पुण्यदायी होता है।</li>
-      </ul>
-      
-      <h2>🔑 निष्कर्ष</h2>
-      
-      <p>Chandra Grahan 2025 न सिर्फ खगोलीय घटना है बल्कि धार्मिक और ज्योतिषीय दृष्टि से भी महत्वपूर्ण है। इस साल का अंतिम चंद्रग्रहण लोगों के लिए कई मान्यताओं और आस्थाओं से जुड़ा हुआ है। सूतक काल और ग्रहण का समय जानकर आप अपने धार्मिक कार्यों की सही तैयारी कर सकते हैं।</p>
-    `,
-    image: "/assets/img/blog/chandra-grahan-2025.png",
-    posterConfig: {
-      bgGradient: 'from-purple-900 to-indigo-900',
-      icon: '🌙',
-      accentColor: 'purple'
-    },
-    category: "Hindu Astrology",
-    author: "Systrocode",
-    date: "September 7, 2025",
-    readTime: "4 min",
-    tags: ["Chandra Grahan", "Lunar Eclipse", "2025", "Hindu Astrology", "Sutak Kaal"]
   }
 ];
 

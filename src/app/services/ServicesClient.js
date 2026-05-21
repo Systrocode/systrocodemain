@@ -11,6 +11,8 @@ import { motion } from 'framer-motion';
 import { fadeIn } from '@/utils/animations';
 import Link from 'next/link';
 import SEOContentBlock, { StructuredData, SEOTextContent } from '@/components/SEOContentBlock.js';
+import SEOFAQSection from '@/components/SEOFAQSection';
+import { pageFAQs } from '@/data/seoFAQs';
 
 export default function ServicesClient() {
   const seoContent = SEOTextContent.services;
@@ -96,6 +98,10 @@ export default function ServicesClient() {
           </div>
         </div>
       </section>
+      <SEOFAQSection
+        seoContent={pageFAQs.services.seoContent}
+        faqs={pageFAQs.services.faqs}
+      />
       <Cta />
       <Footer />
     </div>

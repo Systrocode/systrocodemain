@@ -5,6 +5,8 @@ import Link from 'next/link';
 import { NavbarMT } from '@/components/NavbarMT';
 import Footer from '@/components/Footer';
 import Brands from '@/components/Brands';
+import SEOFAQSection from '@/components/SEOFAQSection';
+import { pageFAQs } from '@/data/seoFAQs';
 
 export default function SEO() {
   const seoServices = [
@@ -288,6 +290,11 @@ export default function SEO() {
           </motion.div>
         </div>
   </section>
+  <SEOFAQSection
+    seoContent={pageFAQs.seo.seoContent}
+    faqs={pageFAQs.seo.faqs}
+    subtitle="Common questions about our SEO services"
+  />
   <Footer />
     </div>
   );

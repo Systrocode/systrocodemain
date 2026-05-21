@@ -5,6 +5,8 @@ import { motion } from 'framer-motion';
 import { fadeIn } from '../../utils/animations';
 import Footer from '@/components/Footer';
 import { NavbarMT } from '@/components/NavbarMT';
+import SEOFAQSection from '@/components/SEOFAQSection';
+import { pageFAQs } from '@/data/seoFAQs';
 
 const InfluencerMarketing = () => {
   const influencerServices = [
@@ -373,6 +375,10 @@ const InfluencerMarketing = () => {
           </motion.div>
         </div>
       </section>
+      <SEOFAQSection
+        seoContent={pageFAQs.influencerMarketing.seoContent}
+        faqs={pageFAQs.influencerMarketing.faqs}
+      />
       <Footer />
     </div>
   );

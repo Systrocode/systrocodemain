@@ -6,6 +6,8 @@ import { fadeIn } from '@/utils/animations';
 import { NavbarMT } from '@/components/NavbarMT';
 import Brands from '@/components/Brands';
 import Footer from '@/components/Footer';
+import SEOFAQSection from '@/components/SEOFAQSection';
+import { pageFAQs } from '@/data/seoFAQs';
 
 const SocialMediaMarketing = () => {
   const socialMediaServices = [
@@ -211,6 +213,11 @@ const SocialMediaMarketing = () => {
           </motion.div>
         </div>
       </section>
+
+      <SEOFAQSection
+        seoContent={pageFAQs.socialMediaMarketing.seoContent}
+        faqs={pageFAQs.socialMediaMarketing.faqs}
+      />
 
       <Footer />
     </div>

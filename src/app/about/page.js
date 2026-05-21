@@ -11,6 +11,8 @@ import Footer from '@/components/Footer.js';
 import { features, hero } from '@/data';
 import { NavbarMT } from '@/components/NavbarMT';
 import SEOContentBlock, { StructuredData, SEOTextContent } from '@/components/SEOContentBlock.js';
+import SEOFAQSection from '@/components/SEOFAQSection.js';
+import { pageFAQs } from '@/data/seoFAQs';
 
 export const metadata = {
   title: "About Us | Systrocode - Digital Marketing & UI/UX Design Experts",
@@ -50,6 +52,11 @@ export default function Home() {
       <Feature3 actual = {features} />
       <Product />
       {/* <Card2/> */}
+      <SEOFAQSection
+        seoContent={pageFAQs.about.seoContent}
+        faqs={pageFAQs.about.faqs}
+        subtitle="Learn more about our team, process, and values"
+      />
       <Cta />
       <Footer />
       {/* <div className='h-[4000px]'></div> */}

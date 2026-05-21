@@ -4,6 +4,8 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { portfolioData } from '@/data';
 import { FaCheck, FaArrowLeft, FaClock, FaMobileAlt, FaUsers, FaCode, FaChartLine } from 'react-icons/fa';
+import SEOFAQSection from '@/components/SEOFAQSection';
+import { pageFAQs } from '@/data/seoFAQs';
 
 export async function generateMetadata({ params }) {
     const { slug } = await params;
@@ -172,6 +174,11 @@ const PortfolioProject = async ({ params }) => {
                     </Link>
                 </div>
             </div>
+
+            <SEOFAQSection
+                seoContent={pageFAQs.portfolio.seoContent}
+                faqs={pageFAQs.portfolio.faqs}
+            />
         </div>
     );
 };

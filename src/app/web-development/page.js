@@ -13,6 +13,8 @@ import { NavbarMT } from '@/components/NavbarMT';
 import { getService } from '@/lib/api';
 import { motion } from 'framer-motion';
 import { fadeIn } from '@/utils/animations';
+import SEOFAQSection from '@/components/SEOFAQSection';
+import { pageFAQs } from '@/data/seoFAQs';
 
 export default function WebDevelopmentPage() {
   // Seed with static fallback so page renders immediately
@@ -175,6 +177,10 @@ export default function WebDevelopmentPage() {
           </div>
         </div>
       </section>
+      <SEOFAQSection
+        seoContent={pageFAQs.webDevelopment.seoContent}
+        faqs={pageFAQs.webDevelopment.faqs}
+      />
       <Cta />
       <Footer />
     </div>

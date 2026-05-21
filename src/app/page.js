@@ -13,6 +13,8 @@ import TechSolutions from '../components/TechSolutions.js';
 import { features, hero } from '@/data.js';
 import ClientNavbar from '@/components/ClientNavbar.js';
 import SEOContentBlock, { StructuredData, SEOTextContent } from '@/components/SEOContentBlock.js';
+import SEOFAQSection from '@/components/SEOFAQSection.js';
+import { pageFAQs } from '@/data/seoFAQs';
 
 export const metadata = {
   title: "Systrocode | Leading Digital Marketing & Web Development Company in India",
@@ -53,6 +55,11 @@ export default function Home() {
       <Feature2 actual={features} />
       <Feature3 actual={features} />
       <Product />
+      <SEOFAQSection
+        seoContent={pageFAQs.home.seoContent}
+        faqs={pageFAQs.home.faqs}
+        subtitle="Common questions about our digital marketing and web development services"
+      />
       <Cta />
       <Footer />
     </div>

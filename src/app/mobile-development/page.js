@@ -10,6 +10,8 @@ import Cta from '@/components/Cta.js';
 import Footer from '@/components/Footer.js';
 import { features, hero, mobileDevelopment } from '@/data.js';
 import { NavbarMT } from '@/components/NavbarMT';
+import SEOFAQSection from '@/components/SEOFAQSection';
+import { pageFAQs } from '@/data/seoFAQs';
 
 export default function MobileDevelopment() {
 
@@ -70,6 +72,10 @@ export default function MobileDevelopment() {
           </div>
         </div>
       </section>
+      <SEOFAQSection
+        seoContent={pageFAQs.mobileDevelopment.seoContent}
+        faqs={pageFAQs.mobileDevelopment.faqs}
+      />
       <Cta />
       <Footer />
       {/* <div className='h-[4000px]'></div> */}

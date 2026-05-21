@@ -5,6 +5,8 @@ import Footer from '@/components/Footer.js';
 import { hero } from '@/data';
 import Form from '@/components/Form';
 import { NavbarMT } from '@/components/NavbarMT';
+import SEOFAQSection from '@/components/SEOFAQSection';
+import { pageFAQs } from '@/data/seoFAQs';
 
 export const metadata = {
   title: "Contact Us | Systrocode - Let's Build Your Digital Future",
@@ -17,6 +19,11 @@ export default function Page() {
       <NavbarMT/>
       <Hero data={hero.contact}/>
       <Form/>
+      <SEOFAQSection
+        seoContent={pageFAQs.contact.seoContent}
+        faqs={pageFAQs.contact.faqs}
+        subtitle="Everything you need to know about working with us"
+      />
       <Brands/>
       <Cta />
       <Footer />

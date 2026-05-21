@@ -4,6 +4,8 @@ import { fadeIn } from '@/utils/animations';
 import Link from 'next/link';
 import Footer from '@/components/Footer';
 import { NavbarMT } from '@/components/NavbarMT';
+import SEOFAQSection from '@/components/SEOFAQSection';
+import { pageFAQs } from '@/data/seoFAQs';
 
 export default function MarketingAutomation() {
   const automationServices = [
@@ -369,6 +371,10 @@ export default function MarketingAutomation() {
           </motion.div>
         </div>
       </section>
+      <SEOFAQSection
+        seoContent={pageFAQs.marketingAutomation.seoContent}
+        faqs={pageFAQs.marketingAutomation.faqs}
+      />
   <Footer />
     </div>
   );

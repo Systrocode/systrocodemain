@@ -6,9 +6,11 @@ import BlogList from '@/components/BlogList';
 import Cta from '@/components/Cta.js';
 import Breadcrumb from '@/components/Breadcrumb';
 import { blogPosts } from '@/data';
+import SEOFAQSection from '@/components/SEOFAQSection';
+import { pageFAQs } from '@/data/seoFAQs';
 
 export const metadata = {
-  title: "Systrocode Blog - Expert Insights on Web Development, Digital Marketing & Technology",
+  title: "Systrocode Blog - Web Development & Digital Marketing Insights",
   description: "Explore practical insights on web development, digital marketing, data analytics, AI automation, and cybersecurity. Get expert tips, how-tos, and industry trends from Systrocode's team of professionals.",
   keywords: "web development blog, digital marketing insights, data analytics tips, AI automation guides, cybersecurity best practices, technology trends, Next.js tutorials, SEO strategies, business automation",
   authors: [{ name: "Systrocode" }],
@@ -91,6 +93,10 @@ export default function Blog() {
         <Breadcrumb items={breadcrumbItems} />
         <BlogHero />
         <BlogList />
+        <SEOFAQSection
+          seoContent={pageFAQs.blog.seoContent}
+          faqs={pageFAQs.blog.faqs}
+        />
         <Cta />
         <Footer />
       </div>

@@ -5,6 +5,8 @@ import { motion } from 'framer-motion';
 import { fadeIn } from '../../utils/animations';
 import Footer from '@/components/Footer';
 import { NavbarMT } from '@/components/NavbarMT';
+import SEOFAQSection from '@/components/SEOFAQSection';
+import { pageFAQs } from '@/data/seoFAQs';
 
 const PPCAdvertising = () => {
   const ppcServices = [
@@ -352,6 +354,10 @@ const PPCAdvertising = () => {
           </motion.div>
         </div>
       </section>
+      <SEOFAQSection
+        seoContent={pageFAQs.ppcAdvertising.seoContent}
+        faqs={pageFAQs.ppcAdvertising.faqs}
+      />
       <Footer />
     </div>
   );

@@ -25,7 +25,7 @@ export async function generateMetadata({ params }) {
   }
 
   return {
-    title: `${post.title} - Systrocode Blog`,
+    title: `${post.title} - Systrocode`,
     description: post.excerpt,
     keywords: post.tags?.join(', ') || 'web development, digital marketing, technology',
     authors: [{ name: post.author || "Systrocode" }],

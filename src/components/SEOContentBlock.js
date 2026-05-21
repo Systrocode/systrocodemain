@@ -81,7 +81,7 @@ export const StructuredData = ({ type, data }) => {
           "https://linkedin.com/company/systrocode",
           "https://instagram.com/systrocode"
         ],
-        "services": [
+        "knowsAbout": [
           "Digital Marketing",
           "Web Development",
           "SEO Services",

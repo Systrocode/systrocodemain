@@ -4,6 +4,8 @@ import { fadeIn } from '@/utils/animations';
 import Link from 'next/link';
 import Footer from '@/components/Footer';
 import { NavbarMT } from '@/components/NavbarMT';
+import SEOFAQSection from '@/components/SEOFAQSection';
+import { pageFAQs } from '@/data/seoFAQs';
 
 export default function MarketingAnalytics() {
   const analyticsServices = [
@@ -303,6 +305,10 @@ export default function MarketingAnalytics() {
           </motion.div>
         </div>
       </section>
+      <SEOFAQSection
+        seoContent={pageFAQs.marketingAnalytics.seoContent}
+        faqs={pageFAQs.marketingAnalytics.faqs}
+      />
   <Footer />
     </div>
   );

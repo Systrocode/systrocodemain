@@ -12,6 +12,8 @@ import Cta from '@/components/Cta.js';
 import Footer from '@/components/Footer.js';
 import { cyberSec, features, hero } from '@/data.js';
 import { NavbarMT } from '@/components/NavbarMT';
+import SEOFAQSection from '@/components/SEOFAQSection';
+import { pageFAQs } from '@/data/seoFAQs';
 
 export default function Home() {
 
@@ -111,6 +113,10 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <SEOFAQSection
+        seoContent={pageFAQs.cyberSecurity.seoContent}
+        faqs={pageFAQs.cyberSecurity.faqs}
+      />
       <Cta/>
       <Footer />
       {/* <div className='h-[4000px]'></div> */}

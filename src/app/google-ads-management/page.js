@@ -4,6 +4,8 @@ import { fadeIn } from '@/utils/animations';
 import Link from 'next/link';
 import Footer from '@/components/Footer';
 import { NavbarMT } from '@/components/NavbarMT';
+import SEOFAQSection from '@/components/SEOFAQSection';
+import { pageFAQs } from '@/data/seoFAQs';
 
 export default function AdsManagement() {
   const adServices = [
@@ -348,6 +350,10 @@ export default function AdsManagement() {
           </motion.div>
         </div>
       </section>
+      <SEOFAQSection
+        seoContent={pageFAQs.googleAds.seoContent}
+        faqs={pageFAQs.googleAds.faqs}
+      />
   <Footer />
     </div>
   );

@@ -8,7 +8,7 @@ import { animateFooter } from '@/utils/animations';
 
 
 const Footer = () => {
-  const { about, services, portfolio, otherResources } = footer;
+  const { about, services, digitalMarketing, otherResources } = footer;
   const { social } = copyright;
 
   useEffect(() => {
@@ -21,7 +21,7 @@ const Footer = () => {
         <div className='flex flex-col lg:flex-row justify-between gap-x-5 gap-y-10'>
           {/* About */}
           <div className="footer-item">
-            <div className='text-xl font-bold mb-4 text-black'>About</div>
+            <div className='text-xl font-bold mb-4 text-black'>Company</div>
             <ul className='flex flex-col gap-y-3'>
               {about.map((item, index) => (
                 <li key={index}>
@@ -33,7 +33,7 @@ const Footer = () => {
 
           {/* Services */}
           <div className="footer-item">
-            <div className='text-xl font-bold mb-4 text-black'>Services</div>
+            <div className='text-xl font-bold mb-4 text-black'>Development</div>
             <ul className='flex flex-col gap-y-3'>
               {services.map((item, index) => (
                 <li key={index}>
@@ -43,11 +43,11 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Portfolio */}
+          {/* Digital Marketing */}
           <div className="footer-item">
-            <div className='text-xl font-bold mb-4 text-black'>Portfolio</div>
+            <div className='text-xl font-bold mb-4 text-black'>Digital Marketing</div>
             <ul className='flex flex-col gap-y-3'>
-              {portfolio.map((item, index) => (
+              {digitalMarketing.map((item, index) => (
                 <li key={index}>
                   <Link className='text-gray-600 hover:text-accent transition text-sm' href={item.href}>{item.name}</Link>
                 </li>
@@ -57,7 +57,7 @@ const Footer = () => {
 
           {/* Other Resources */}
           <div className="footer-item">
-            <div className='text-xl font-bold mb-4 text-black'>Other Resources</div>
+            <div className='text-xl font-bold mb-4 text-black'>Resources</div>
             <ul className='flex flex-col gap-y-3'>
               {otherResources.map((item, index) => (
                 <li key={index}>

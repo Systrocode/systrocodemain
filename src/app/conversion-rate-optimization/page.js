@@ -4,6 +4,8 @@ import { fadeIn } from '@/utils/animations';
 import Link from 'next/link';
 import Footer from '@/components/Footer';
 import { NavbarMT } from '@/components/NavbarMT';
+import SEOFAQSection from '@/components/SEOFAQSection';
+import { pageFAQs } from '@/data/seoFAQs';
 
 export default function ConversionOptimization() {
   const croServices = [
@@ -338,6 +340,10 @@ export default function ConversionOptimization() {
           </motion.div>
         </div>
       </section>
+      <SEOFAQSection
+        seoContent={pageFAQs.conversionRateOptimization.seoContent}
+        faqs={pageFAQs.conversionRateOptimization.faqs}
+      />
   <Footer />
     </div>
   );
