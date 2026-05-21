@@ -506,7 +506,6 @@ export const footer = {
     { name: 'About Us', href: '/about' },
     { name: 'Our Work', href: '/our-work' },
     { name: 'Services', href: '/services' },
-    { name: 'Industries', href: '/industries' },
     { name: 'Blog', href: '/blog' },
     { name: 'Contact Us', href: '/contact' },
   ],
