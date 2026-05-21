@@ -15,6 +15,8 @@ import ClientNavbar from '@/components/ClientNavbar.js';
 import SEOContentBlock, { StructuredData, SEOTextContent } from '@/components/SEOContentBlock.js';
 import SEOFAQSection from '@/components/SEOFAQSection.js';
 import { pageFAQs } from '@/data/seoFAQs';
+import SEOTextSection from '@/components/SEOTextSection';
+import { seoText } from '@/data/seoText';
 
 export const metadata = {
   title: "Systrocode | Leading Digital Marketing & Web Development Company in India",
@@ -55,6 +57,11 @@ export default function Home() {
       <Feature2 actual={features} />
       <Feature3 actual={features} />
       <Product />
+      <SEOTextSection
+        title={seoText.home.title}
+        paragraphs={seoText.home.paragraphs}
+        lists={seoText.home.lists}
+      />
       <SEOFAQSection
         seoContent={pageFAQs.home.seoContent}
         faqs={pageFAQs.home.faqs}

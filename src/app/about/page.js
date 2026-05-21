@@ -13,6 +13,8 @@ import { NavbarMT } from '@/components/NavbarMT';
 import SEOContentBlock, { StructuredData, SEOTextContent } from '@/components/SEOContentBlock.js';
 import SEOFAQSection from '@/components/SEOFAQSection.js';
 import { pageFAQs } from '@/data/seoFAQs';
+import SEOTextSection from '@/components/SEOTextSection';
+import { seoText } from '@/data/seoText';
 
 export const metadata = {
   title: "About Us | Systrocode - Digital Marketing & UI/UX Design Experts",
@@ -52,6 +54,11 @@ export default function Home() {
       <Feature3 actual = {features} />
       <Product />
       {/* <Card2/> */}
+      <SEOTextSection
+        title={seoText.about.title}
+        paragraphs={seoText.about.paragraphs}
+        lists={seoText.about.lists}
+      />
       <SEOFAQSection
         seoContent={pageFAQs.about.seoContent}
         faqs={pageFAQs.about.faqs}

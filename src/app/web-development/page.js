@@ -15,6 +15,8 @@ import { motion } from 'framer-motion';
 import { fadeIn } from '@/utils/animations';
 import SEOFAQSection from '@/components/SEOFAQSection';
 import { pageFAQs } from '@/data/seoFAQs';
+import SEOTextSection from '@/components/SEOTextSection';
+import { seoText } from '@/data/seoText';
 
 export default function WebDevelopmentPage() {
   // Seed with static fallback so page renders immediately
@@ -177,6 +179,11 @@ export default function WebDevelopmentPage() {
           </div>
         </div>
       </section>
+      <SEOTextSection
+        title={seoText.webDevelopment.title}
+        paragraphs={seoText.webDevelopment.paragraphs}
+        lists={seoText.webDevelopment.lists}
+      />
       <SEOFAQSection
         seoContent={pageFAQs.webDevelopment.seoContent}
         faqs={pageFAQs.webDevelopment.faqs}

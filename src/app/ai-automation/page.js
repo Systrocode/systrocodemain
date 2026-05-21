@@ -14,6 +14,8 @@ import { aiauto, features, hero } from '@/data.js';
 import { NavbarMT } from '@/components/NavbarMT';
 import SEOFAQSection from '@/components/SEOFAQSection';
 import { pageFAQs } from '@/data/seoFAQs';
+import SEOTextSection from '@/components/SEOTextSection';
+import { seoText } from '@/data/seoText';
 
 export default function Home() {
 
@@ -74,6 +76,11 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <SEOTextSection
+        title={seoText.aiAutomation.title}
+        paragraphs={seoText.aiAutomation.paragraphs}
+        lists={seoText.aiAutomation.lists}
+      />
       <SEOFAQSection
         seoContent={pageFAQs.aiAutomation.seoContent}
         faqs={pageFAQs.aiAutomation.faqs}

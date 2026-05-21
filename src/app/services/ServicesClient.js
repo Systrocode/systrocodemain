@@ -13,6 +13,8 @@ import Link from 'next/link';
 import SEOContentBlock, { StructuredData, SEOTextContent } from '@/components/SEOContentBlock.js';
 import SEOFAQSection from '@/components/SEOFAQSection';
 import { pageFAQs } from '@/data/seoFAQs';
+import SEOTextSection from '@/components/SEOTextSection';
+import { seoText } from '@/data/seoText';
 
 export default function ServicesClient() {
   const seoContent = SEOTextContent.services;
@@ -98,6 +100,11 @@ export default function ServicesClient() {
           </div>
         </div>
       </section>
+      <SEOTextSection
+        title={seoText.services.title}
+        paragraphs={seoText.services.paragraphs}
+        lists={seoText.services.lists}
+      />
       <SEOFAQSection
         seoContent={pageFAQs.services.seoContent}
         faqs={pageFAQs.services.faqs}

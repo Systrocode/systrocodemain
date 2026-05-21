@@ -7,6 +7,8 @@ import Footer from '@/components/Footer';
 import Brands from '@/components/Brands';
 import SEOFAQSection from '@/components/SEOFAQSection';
 import { pageFAQs } from '@/data/seoFAQs';
+import SEOTextSection from '@/components/SEOTextSection';
+import { seoText } from '@/data/seoText';
 
 export default function SEO() {
   const seoServices = [
@@ -290,6 +292,11 @@ export default function SEO() {
           </motion.div>
         </div>
   </section>
+  <SEOTextSection
+    title={seoText.seo.title}
+    paragraphs={seoText.seo.paragraphs}
+    lists={seoText.seo.lists}
+  />
   <SEOFAQSection
     seoContent={pageFAQs.seo.seoContent}
     faqs={pageFAQs.seo.faqs}

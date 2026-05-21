@@ -7,6 +7,8 @@ import Form from '@/components/Form';
 import { NavbarMT } from '@/components/NavbarMT';
 import SEOFAQSection from '@/components/SEOFAQSection';
 import { pageFAQs } from '@/data/seoFAQs';
+import SEOTextSection from '@/components/SEOTextSection';
+import { seoText } from '@/data/seoText';
 
 export const metadata = {
   title: "Contact Us | Systrocode - Let's Build Your Digital Future",
@@ -19,6 +21,11 @@ export default function Page() {
       <NavbarMT/>
       <Hero data={hero.contact}/>
       <Form/>
+      <SEOTextSection
+        title={seoText.contact.title}
+        paragraphs={seoText.contact.paragraphs}
+        lists={seoText.contact.lists}
+      />
       <SEOFAQSection
         seoContent={pageFAQs.contact.seoContent}
         faqs={pageFAQs.contact.faqs}
